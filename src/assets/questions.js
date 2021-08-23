@@ -153,8 +153,8 @@ export const questions = {
       B: "Add the appropiate roles and permission to the user to view the business manager extension.",
       C: "Add plugin_bm_extension to the cartridge path under Storefront cartridge site path.",
       D: "Activate a new code version for the Business Manager Site.",
-      answer: "A, D",
     },
+    answer: "A, D",
   },
 
   18: {
