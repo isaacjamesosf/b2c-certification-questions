@@ -1,6 +1,8 @@
 import { MenuItem, Select } from "@material-ui/core";
 
 const OPTIONS = [
+  { label: "5", value: 5 },
+  { label: "10", value: 10 },
   { label: "20", value: 20 },
   { label: "30", value: 30 },
   { label: "40", value: 40 },
