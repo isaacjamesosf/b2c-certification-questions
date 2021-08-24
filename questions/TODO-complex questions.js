@@ -1,18 +1,23 @@
 const complex = {
-	Question #:1
-	Given the requirements:
+	1: {
+		questionNumber: "Question #:1",
+		description: `Given the requirements:
+	
+		• To integrate with an external web service using HTTP requests
+		• To create a service for this purpose with the Service framework using the LocalServiceRegistry class.
+		• To test the service before the external service provider makes the API available
+	
+		Which solution allows the developer to satisfy the requirements?`,
+		options: {
+			A:	`Create a service and implement the mockfull callback and a sitepreference to enable or disable the mock response.`,
+			B:	`Create a service and implement the mockFill callback and set the service mode to mock.`,
+			C:	`Create a service and a Sitepreference that induce the service to respond witch a mock response using a conditional.`,
+			D:	`Create two services, one mock and the real one, and a Sitepreference that enable the mock or the real one`,
 
-	• To integrate with an external web service using HTTP requests
-	• To create a service for this purpose with the Service framework using the LocalServiceRegistry class.
-	• To test the service before the external service provider makes the API available
-
-	Which solution allows the developer to satisfy the requirements?
-	A.	Create a service and implement the mockfull callback and a sitepreference to enable or disable the mock response.
-	B.	Create a service and implement the mockFill callback and set the service mode to mock.
-	C.	Create a service and a Sitepreference that induce the service to respond witch a mock response using a conditional.
-	D.	Create two services, one mock and the real one, and a Sitepreference that enable the mock or the real one
-	Answer: A;
-	Note: Actually the proper response should be B(Create a service and implement the mockFill callback and set the service mode to mock.) but with one consideration: There is no MockFill function in the API but mockfull
+		},
+		answer: ["A"],
+		answerNote: `Actually the proper response should be B(Create a service and implement the mockFill callback and set the service mode to mock.) but with one consideration: There is no MockFill function in the API but mockfull`,
+	}
 
 
 	Question #:5
