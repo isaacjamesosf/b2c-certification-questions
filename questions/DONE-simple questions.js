@@ -48,18 +48,6 @@ const simple = {
     answer: "A",
   },
 
-  9: {
-    questionNumber: "Question #:9",
-    description: "Given the code snippet above, what should be added after this code so it can be used for page component display?",
-    options: {
-      A: "Base.render = render;",
-      B: "Module.exports.render = render;",
-      C: "Module.exports = render;",
-      D: "Module.exports = server.exports();",
-    },
-    answer: "D",
-  },
-
   10: {
     questionNumber: "Question #:10",
     description: "A Digital Developer has detected storefront pages being rendered with an error message. After inspecting the log files, the Developer discovered that an enforced quota is being exceeded. What action should the Developer take to stop the quota violation?",
