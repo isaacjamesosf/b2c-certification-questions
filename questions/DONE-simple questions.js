@@ -1,4 +1,4 @@
-const simple = {
+export const questions = {
   2: {
     questionNumber: "Question #:2",
     description: "What happens if the log file size limit is reached in custom logging?",
@@ -8,8 +8,8 @@ const simple = {
       C: "The log file is deleted and recreated from scratch.",
       D: "The log file rolls over and the last used log is overwritten.",
     },
-    answer: "A",
-    Note: " From the documentation: “Logging is suspended until the next day (00:00) once the 10 MB limit has been reached.”",
+    answer:["A"],
+    answerNote: " From the documentation: “Logging is suspended until the next day (00:00) once the 10 MB limit has been reached.”",
   },
 
   3: {
@@ -21,7 +21,7 @@ const simple = {
       C: "Remove invalid characters from cartridge file and folder names.",
       D: "Set the server connection’s target version directory to the active code version.",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   4: {
@@ -33,7 +33,7 @@ const simple = {
       C: "https://test.demandware.net/s/test-site/dw/shop/v18_3/products/M1355?client_id=aaa...",
       D: "https://www.test.com/dw/shop/v18_3/products/M1355?client_id=aaa...",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   8: {
@@ -45,7 +45,7 @@ const simple = {
       C: "Only page Designer components can ve tied to campaigns.",
       D: "Only content slot configurations can ve localized for different languages.",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   9: {
@@ -57,7 +57,7 @@ const simple = {
       C: "Module.exports = render;",
       D: "Module.exports = server.exports();",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   10: {
@@ -69,7 +69,7 @@ const simple = {
       C: "Take no action, the overage will be resolved when concurrent visitors are reduced.",
       D: "Ask support to remove the quota limit.",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   11: {
@@ -81,7 +81,7 @@ const simple = {
       C: "Use the Site Import & Export module to export both the site catalog and the master catalog in a single archive.",
       D: "Use the Site Import & Export module to export the master catalog, filtered by site catalog categories to export specific products.",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   12: {
@@ -93,7 +93,7 @@ const simple = {
       C: "Create a perpetual inventory record.",
       D: "Create an inventory record with Backorder Handling enabled.",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   13: {
@@ -105,7 +105,7 @@ const simple = {
       C: "{ hooks: “./cartridge/scripts/hooks.json” }",
       D: "{ hooks: ./scripts/hooks.json }",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   14: {
@@ -118,7 +118,7 @@ const simple = {
       D: "Use inline Javascript.",
       E: "Combine several images into a single image.",
     },
-    answer: "A, C, E",
+    answer:["A, C, E"],
   },
 
   15: {
@@ -130,7 +130,7 @@ const simple = {
       C: "Start a pipeline debugging session and view the caching information provided.",
       D: "Right-click on the component in UX Studio and view the caching properties of the file.",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   16: {
@@ -142,7 +142,7 @@ const simple = {
       C: "The category is not sorted",
       D: "The category is offline.",
     },
-    answer: "B, D",
+    answer:["B, D"],
   },
 
   17: {
@@ -154,7 +154,7 @@ const simple = {
       C: "Add plugin_bm_extension to the cartridge path under Storefront cartridge site path.",
       D: "Activate a new code version for the Business Manager Site.",
     },
-    answer: "A, D",
+    answer:["A, D"],
   },
 
   18: {
@@ -166,7 +166,7 @@ const simple = {
       C: "Modify the debugger configuration and use the existing pipeline debugger.",
       D: "Create and use a new controller debug configuration.",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   22: {
@@ -178,7 +178,7 @@ const simple = {
       C: "Increase the web service time out",
       D: "Change the code that sets the throwOnError attribute of the service to be true.",
     },
-    answer: "B, C",
+    answer:["B, C"],
   },
 
   23: {
@@ -190,7 +190,7 @@ const simple = {
       C: "Add layout_type_inclusion in the target components json configurations.",
       D: "Add layout_type_exclusion in the other asset components json configuration.",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   24: {
@@ -202,7 +202,7 @@ const simple = {
       C: "POST Form",
       D: "HTTP Form",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   26: {
@@ -214,7 +214,7 @@ const simple = {
       C: "Logger.warn(‘The current product is ${myProduct.getID()} with name ${myProduct.getName()}’);",
       D: "Logger.warn(‘The current product is %s with name %s’), context(myProduct.getID(), myProduct.getName());",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   27: {
@@ -226,7 +226,7 @@ const simple = {
       C: "Slot Configuration",
       D: "Rendering Template",
     },
-    answer: "C, D",
+    answer:["C, D"],
   },
 
   104: {
@@ -239,7 +239,7 @@ const simple = {
       D: "The cartridge is for the current version of B2C Commerce.",
       E: "The server is configured to accept incoming connections.",
     },
-    answer: "A, D, E",
+    answer:["A, D, E"],
   },
 
   28: {
@@ -251,7 +251,7 @@ const simple = {
       C: "The current log file is archived and a new log file is created.",
       D: "The log file Rolls over and the oldest log messages are overwritten",
     },
-    answer: "B",
+    answer:["B"],
   },
   30: {
     questionNumber: "Question #:30",
@@ -262,7 +262,7 @@ const simple = {
       C: "Breaks the process into separate loops.",
       D: "Avoid using an Iterator and use a Collection instead.",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   31: {
@@ -274,7 +274,7 @@ const simple = {
       C: 'ISML.renderTemlpate ( "helloworld.isml", { product: myProduct });',
       D: 'ISML.renderTemlpate ( "helloworld.isml", { myProduct: product });',
     },
-    answer: "A",
+    answer:["A"],
   },
 
   32: {
@@ -286,7 +286,7 @@ const simple = {
       C: "Change the default setting in the slot configuration",
       D: "Change the content type for the slot configuration",
     },
-    answer: "B, D",
+    answer:["B, D"],
   },
 
   33: {
@@ -298,7 +298,7 @@ const simple = {
       C: "Change the slot’s configuration template to the appropriate rendering template.",
       D: "Delete the existing content asset.",
     },
-    answer: "B, C",
+    answer:["B, C"],
   },
 
   34: {
@@ -310,7 +310,7 @@ const simple = {
       C: "ProductSearchModel.getProductSearchHits()",
       D: "Category.getProducts()",
     },
-    answer: "C, D",
+    answer:["C, D"],
   },
 
   35: {
@@ -322,7 +322,7 @@ const simple = {
       C: "Create a Product Set called ‘Our Top Combo’ and add the products into the set.",
       D: "Create a recommendation rule associating the four products as a recommendation group.",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   37: {
@@ -334,7 +334,7 @@ const simple = {
       C: "Create the custom object definition in production as Replicable",
       D: "Create the custom object definition in staging as Replicable",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   38: {
@@ -346,7 +346,7 @@ const simple = {
       C: "ISML.render(‘content/custom/customLandingPage’);",
       D: "ISML.renderTemplate(‘content/custom/customLandingPage’);",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   41: {
@@ -358,7 +358,7 @@ const simple = {
       C: "$httpUrl(‘Content-Show’, ‘cid’, ‘terms-and-conditions’)$",
       D: "$url(‘Page-Show’, ‘cid’, ‘terms-and-conditions’)$",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   42: {
@@ -370,7 +370,7 @@ const simple = {
       C: "npm run compile:js, npm run compile: scss, npm run compile:html",
       D: "npm run compile:js, npm run compile:scss, npm run compile:fonts",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   43: {
@@ -382,7 +382,7 @@ const simple = {
       C: "checkout.properties in the default locale folder",
       D: "de_checkout.properties in resources folder",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   46: {
@@ -395,7 +395,7 @@ const simple = {
       D: "Create a plain JavaScript object representing a system object",
       E: "Use the model needed for the view.",
     },
-    answer: "A, C, E",
+    answer:["A, C, E"],
   },
   47: {
     questionNumber: "Question #:47",
@@ -406,7 +406,7 @@ const simple = {
       C: "Disable multi-threading.",
       D: "Use asynchronous import or export jobs.",
     },
-    answer: "B, C",
+    answer:["B, C"],
   },
 
   48: {
@@ -418,7 +418,7 @@ const simple = {
       C: "Transaction’s credit card information",
       D: "Payment gateway service response code",
     },
-    answer: "B, D",
+    answer:["B, D"],
   },
 
   50: {
@@ -430,7 +430,7 @@ const simple = {
       C: "Call count",
       D: "Response time",
     },
-    answer: "A",
+    answer:["A"],
   },
   51: {
     questionNumber: "Question #:51",
@@ -441,7 +441,7 @@ const simple = {
       C: "Store translated model values in different fields; one field for each locale.",
       D: "Add model to a new custom object with localizable attributes.",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   53: {
@@ -453,7 +453,7 @@ const simple = {
       C: "Define search-suggestion buckets for weightCapacity, then rebuild the product search index.",
       D: "Define a search refinement for weightCapacity, then clear the page cache segment for Search-Show.",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   54: {
@@ -465,7 +465,7 @@ const simple = {
       C: "exports.PaymentForm = guard.httpsPost(handlePaymentForm);",
       D: "exports.PaymentForm = guard.ensure([‘https’, ‘post’, ‘loggedIn’], handlePaymentForm);",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   56: {
@@ -477,7 +477,7 @@ const simple = {
       C: "CustomObjectMgr.createCustomObject(primaryKey);",
       D: "CustomObjectMgr.createCustomObject(CustomObjectType,primaryKey)",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   57: {
@@ -489,7 +489,7 @@ const simple = {
       C: "Create a site preference to store timeout settings and implement an IOException handler to execute fallback code.",
       D: "Use the setTimeout method to execute fallback code if the request has NOT completed.",
     },
-    answer: "A",
+    answer:["A"],
   },
   58: {
     questionNumber: "Question #:58",
@@ -500,7 +500,7 @@ const simple = {
       C: "Var customobject = dw.object.CustomObjectMgr. createCustomObject (‘NewsletterSubscription’, newsLetterForm.email.value);",
       D: "Var customobject = dw.object.CustomObjectMgr. createCustomObject  (‘NewsletterSubscription’,’email’, newsLetterForm.email.value);",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   60: {
@@ -512,7 +512,7 @@ const simple = {
       C: "It uses the search index.",
       D: "It reduces accesses to the application server.",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   61: {
@@ -524,7 +524,7 @@ const simple = {
       C: "prod.persistable.sellable",
       D: "prod.custom.sellable ",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   63: {
@@ -536,7 +536,7 @@ const simple = {
       C: "Payment Processors",
       D: "Apple Pay",
     },
-    answer: "D; SOMETHING LIKE THAT WHICH THE ASNWER WAS PAYMENT METHODS. THE QUESTION WAS ABOUT ADD MAKES ENABLED AN EXISTING CREDIT CARD THAT WAS CREATED BUT DISABLED, WHERE IN BM TURN THAT CREDIT CARD ENABLED",
+    answer:["D; SOMETHING LIKE THAT WHICH THE ASNWER WAS PAYMENT METHODS. THE QUESTION WAS ABOUT ADD MAKES ENABLED AN EXISTING CREDIT CARD THAT WAS CREATED BUT DISABLED, WHERE IN BM TURN THAT CREDIT CARD ENABLED"],
   },
 
   65: {
@@ -548,7 +548,7 @@ const simple = {
       C: "Add a Site-specific custom attribute to the Product system object type.",
       D: "Add a Localizable custom preference to the SitePreference system object type",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   66: {
@@ -560,7 +560,7 @@ const simple = {
       C: "Use OCAPI and invoke it in native language.",
       D: "Use WebDAV Client to retrieve products.",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   68: {
@@ -572,7 +572,7 @@ const simple = {
       C: "<a href=”${URLUtils.url(‘Account-Show’)}>${Resource.msg(‘myaccount’,’account’,null)}</a>",
       D: "<a href=”${URLUtils (‘Account-Show’)}>${ResourceMgr.getPropierties(‘myaccount’,’account’,null)}</a>",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   70: {
@@ -584,7 +584,7 @@ const simple = {
       C: "Create a Synonym Dictionary entry: car accessories, household, technology. Use search mode First Word.",
       D: "Create a Common Phrase Dictionary entry: car accessories. Use search mode Exact Match.",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   71: {
@@ -596,7 +596,7 @@ const simple = {
       C: "dw.ocapi.shop.basket.afterPostShipment",
       D: "dw.ocapi.shop.order.afterPOST",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   72: {
@@ -608,7 +608,7 @@ const simple = {
       C: "Set the cartridge path to include only app_newsite.",
       D: "Set the cartridge path so that app_newsite is after app_storefront.",
     },
-    answer: "B; NOT EXACTLY THE SAME. I ANSWERED TO PUT THE APP_NEWSITE RIGHT BEFORE THE EXISTING CARTRIDGE THAT HOLDS THE BUSINESS LOGIC AND DATA MODEL(IN THIS CASE, APP_STOREFRONT)",
+    answer:["B; NOT EXACTLY THE SAME. I ANSWERED TO PUT THE APP_NEWSITE RIGHT BEFORE THE EXISTING CARTRIDGE THAT HOLDS THE BUSINESS LOGIC AND DATA MODEL(IN THIS CASE, APP_STOREFRONT)"],
   },
 
   73: {
@@ -620,7 +620,7 @@ const simple = {
       C: "Merchant Tools > Ordering > Payment Processors",
       D: "Merchant Tools > Site Preferences > Payment Types",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   74: {
@@ -632,7 +632,7 @@ const simple = {
       C: "Use the import capability of the Site Import & Export module of Business Manager.",
       D: "Use the Business Manager Data Replication module to replicate the catalog from the original Developer’s sandbox.",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   75: {
@@ -644,7 +644,7 @@ const simple = {
       C: "Ad dan <isscript> to the template, and call StoreMgr.searchStoresByCoordinates();",
       D: "Use the module.superModule functionality and the call method to add a new property to the Store Model.",
     },
-    answer: "D",
+    answer:["D"],
   },
   76: {
     questionNumber: "Question #:76 ",
@@ -655,7 +655,7 @@ const simple = {
       C: "Block displaying the product detail page if Available to Sell (ATS) = 0.",
       D: "Exclude pre-order products from search results.",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   77: {
@@ -667,7 +667,7 @@ const simple = {
       C: "Increase the web service time out.",
       D: "Update the external service to have a faster response time.",
     },
-    answer: "A, C",
+    answer:["A, C"],
   },
 
   79: {
@@ -679,7 +679,7 @@ const simple = {
       C: "Define a custom object type to store the username with the region code.",
       D: "Store the region code value in the geolocation system attribute of the Order.",
     },
-    answer: "B; ",
+    answer:["B"],
   },
 
   80: {
@@ -691,7 +691,7 @@ const simple = {
       C: "View the product list page cache settings provided in the Administration > Manage Sites Business Manager module.",
       D: "Enable the template debugger to verify the cache times for the producttile.isml template.",
     },
-    answer: "A, C",
+    answer:["A, C"],
   },
 
   81: {
@@ -703,7 +703,7 @@ const simple = {
       C: "Session scope variable",
       D: "Content slot variable",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   82: {
@@ -715,7 +715,7 @@ const simple = {
       C: "Logger.error(‘Unexpected service response’)",
       D: "Logger.warn(‘Unexpected service response’)",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   83: {
@@ -728,7 +728,7 @@ const simple = {
       D: "Keystore Password",
       E: "Business Manager Password",
     },
-    answer: "B, C, E; SOMETHING LIKE THAT. THE DIFFERENCE WAS THE CONFIGURATION WAS USING VSCODE, AND THE ANSWER WAS: USERNAME/PASSWORD(THERE BOTH WAS IN THE SAME OPTION), CODE VERSION AND HOSTNAME",
+    answer:["B, C, E; SOMETHING LIKE THAT. THE DIFFERENCE WAS THE CONFIGURATION WAS USING VSCODE, AND THE ANSWER WAS: USERNAME/PASSWORD(THERE BOTH WAS IN THE SAME OPTION), CODE VERSION AND HOSTNAME"],
   },
   84: {
     questionNumber: "Question #:84",
@@ -739,7 +739,7 @@ const simple = {
       C: "this.status = ‘NO_FILES_FOUND’ return this;",
       D: "return ‘NO_FILES_FOUND",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   85: {
@@ -751,7 +751,7 @@ const simple = {
       C: "Client_id",
       D: "Version_range",
     },
-    answer: "A, C",
+    answer:["A, C"],
   },
 
   86: {
@@ -763,7 +763,7 @@ const simple = {
       C: "Set StockLevel = maxAllocation for the product.",
       D: "Manually set the inventory to a high number.",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   87: {
@@ -775,7 +775,7 @@ const simple = {
       C: "In Custom Log Settings, check the DEBUG box for Select Log Levels Written to Files.",
       D: "In custom Log Settings, activate the loggin category at DEBUG level.",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   91: {
@@ -787,7 +787,7 @@ const simple = {
       C: "app_project:client_project:storefront_controllers:storefront_core",
       D: "storefront_core:storefront_controllers:client_project:app_project",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   92: {
@@ -799,7 +799,7 @@ const simple = {
       C: "Put breakpoints in the code, debug, and examine variable values.",
       D: "Print all values in the script node called before the current script.",
     },
-    answer: "C",
+    answer:["C"],
   },
   94: {
     questionNumber: "Question #:94",
@@ -811,7 +811,7 @@ const simple = {
       D: "Folders",
       E: "Content assets",
     },
-    answer: "C, D, E; ",
+    answer:["C, D, E; "],
   },
 
   95: {
@@ -823,7 +823,7 @@ const simple = {
       C: "<isreplace> … </isreplace>",
       D: "<isinclude> … </isinclude>",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   96: {
@@ -835,7 +835,7 @@ const simple = {
       C: "Use a Sitepreference dedicated for the service URL",
       D: "Use a Globalpreference dedicated for the service URL",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   97: {
@@ -847,7 +847,7 @@ const simple = {
       C: "HTTP Form",
       D: "WebDAV ",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   99: {
@@ -859,7 +859,7 @@ const simple = {
       C: "Change the global setting,”Enable Taxation Methods” to true, then change the Taxation setting to Gross",
       D: "Create a new site with Taxation set to Gross, then delete the old site.",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   100: {
@@ -871,7 +871,7 @@ const simple = {
       C: "Credit cards in the Merchant Tools > Ordering > Payment Methods module.",
       D: "Credit card exclusion rules in the CreditCardType.json configuration file.",
     },
-    answer: "C",
+    answer:["C"],
   },
   101: {
     questionNumber: "Question #:101",
@@ -882,7 +882,7 @@ const simple = {
       C: "Create a new SingleBrandStore custom object configuration.",
       D: "Adjust the relevant Site Preference in the Stores group",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   102: {
@@ -894,7 +894,7 @@ const simple = {
       C: "Tax Jurisdiction is missing",
       D: "Tax Locale is configured wrong",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   103: {
@@ -906,7 +906,7 @@ const simple = {
       C: "Operations > Cache > Site",
       D: "Site > Site Preferences > Cache",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   106: {
@@ -918,7 +918,7 @@ const simple = {
       C: '<isslot id="my_banner "description="for home page"context="global">',
       D: '<isslot id="my_banner "description="for home page"context="global"context-object="${pdict.CurrentHomePage}"/>',
     },
-    answer: "C",
+    answer:["C"],
   },
 
   107: {
@@ -930,7 +930,7 @@ const simple = {
       C: "A PATCH request to the Stores Data OCAPI.",
       D: "An UPDATE request to the Stores Data OCAPI.",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   108: {
@@ -942,7 +942,7 @@ const simple = {
       C: "Download the site export file and use UX Studio to transfer the data to the sandbox.",
       D: "Use the Site Development > Import & Export Business Manager module.",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   109: {
@@ -954,7 +954,7 @@ const simple = {
       C: "The CSRF token is present in the form and is being submitted in the request.",
       D: "The CSRF settings in Business Manager are properly configured.",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   110: {
@@ -966,7 +966,7 @@ const simple = {
       C: "Ensure that the “login” category is added to the Custom Log Filters in the Log Settings Business Manager module.",
       D: "Ensure that the debug log level has been added to the custom log level types in the Global Preferences business manager module.",
     },
-    answer: "A, C",
+    answer:["A, C"],
   },
 
   112: {
@@ -978,7 +978,7 @@ const simple = {
       C: "Upload the file to the Impex WebDAV directory and import using the Site Import tool within UX Studio.",
       D: "Upload the file to the Static WebDAV directory and import using the Import & Export Business Manager module.",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   113: {
@@ -990,7 +990,7 @@ const simple = {
       C: "local include",
       D: "require () method",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   115: {
@@ -1002,7 +1002,7 @@ const simple = {
       C: "Implement a Controller file with a “render” route",
       D: "Implement a metadata JSON file with a “render” property",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   116: {
@@ -1014,7 +1014,7 @@ const simple = {
       C: "Append a new function to all the existing routes with the server module",
       D: "Define a new middleware function and use it in the existing routes",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   117: {
@@ -1026,7 +1026,7 @@ const simple = {
       C: "Create an Attribute Group with the desired attributes in it",
       D: "Sort the attributes in the custom object type",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   118: {
@@ -1038,7 +1038,7 @@ const simple = {
       C: "PATCH /orders/{order_no} with dw.ocapi.shop.order.afterPATCH",
       D: "POST /orders/{order_no} with dw.ocapi.shop.order.afterPOST",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   120: {
@@ -1050,7 +1050,7 @@ const simple = {
       C: "Redirect users to the registration page if they are not logged in.",
       D: "Implement involved business logic through conditional statements.",
     },
-    answer: "B, D",
+    answer:["B, D"],
   },
 
   121: {
@@ -1062,7 +1062,7 @@ const simple = {
       C: "Add the creation date to the attribute group for the Custom Object.",
       D: "Assign the current date/time to a new custom attribute, creationDate, via code.",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   123: {
@@ -1074,7 +1074,7 @@ const simple = {
       C: "Content Image Import module of Business Manager",
       D: "Site Development Import & Export module of Business Manager",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   124: {
@@ -1086,7 +1086,7 @@ const simple = {
       C: "res.print()",
       D: "res.log()",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   125: {
@@ -1099,7 +1099,7 @@ const simple = {
       D: "Content slots",
       E: "Payment types",
     },
-    answer: "A, B, D",
+    answer:["A, B, D"],
   },
 
   126: {
@@ -1111,7 +1111,7 @@ const simple = {
       C: "Pipeline Debugger",
       D: "Pipeline Profiler",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   127: {
@@ -1123,7 +1123,7 @@ const simple = {
       C: "Defines the attributes that a merchant enters when using the component type.",
       D: "Defines the business and rendering logic of the component required by the merchant.",
     },
-    answer: "B, C",
+    answer:["B, C"],
   },
 
   128: {
@@ -1135,7 +1135,7 @@ const simple = {
       C: "The form definition is incorrect.",
       D: "The form does not pass all validations.",
     },
-    answer: "B, C",
+    answer:["B, C"],
   },
   129: {
     questionNumber: "Question #:129",
@@ -1146,7 +1146,7 @@ const simple = {
       C: "Showing the customer's information in their B2C Commerce “My Account” page.",
       D: "Updating Inventory information from a management software.",
     },
-    answer: "C, D",
+    answer:["C, D"],
   },
 
   130: {
@@ -1158,7 +1158,7 @@ const simple = {
       C: "Set the Content Slot configuration so it is based on the system customer group registered, versus unregistered.",
       D: "Set the Content Asset configuration for a customer that is a registered, versus unregistered, user.",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   131: {
@@ -1170,7 +1170,7 @@ const simple = {
       C: "Add an alias for the new locale and then create and configure the locale itself under Global Preferences section.",
       D: "Create and configure the locale under Global Preferences section and activate it in Site Preferences.",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   132: {
@@ -1182,7 +1182,7 @@ const simple = {
       C: "dw.svc.LocalServiceRegistry.createService()",
       D: "dw.svc.LocalServiceInstance.createService()",
     },
-    answer: "C",
+    answer:["C"],
   },
   133: {
     questionNumber: "Question #:133",
@@ -1193,7 +1193,7 @@ const simple = {
       C: "Check that the correct code version is selected.",
       D: "Check the Storefront site cartridge path.",
     },
-    answer: "A, D",
+    answer:["A, D"],
   },
 
   134: {
@@ -1205,7 +1205,7 @@ const simple = {
       C: "Creates a link to the Account-Header endpoint that allows mobile navigation.",
       D: "Performs a call to the Account-Header endpoint to allow mobile navigation.",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   135: {
@@ -1217,7 +1217,7 @@ const simple = {
       C: "Extends the ContentSearchModel to allow the folder filter.",
       D: "Filters Page Designer search results into separate page and componente folders.",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   136: {
@@ -1229,7 +1229,7 @@ const simple = {
       C: "Google, GitHub, and the storefront application",
       D: "Commerce Cloud overview page, Trailhead, and Business Manager",
     },
-    answer: "A",
+    answer:["A"],
   },
   137: {
     questionNumber: "Question #:137",
@@ -1240,7 +1240,7 @@ const simple = {
       C: "Page cache settings, site taxation, and code versions",
       D: "Menu items, menu actions, and forms",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   138: {
@@ -1252,7 +1252,7 @@ const simple = {
       C: "Most Valuable Commerce",
       D: "Moody Velociraptors Cry",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   139: {
@@ -1264,7 +1264,7 @@ const simple = {
       C: "Business Manager, Visual Studio Code, and the Commerce Cloud Storefront Reference Architecture",
       D: "Controllers, OCAPI, and form definitions",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   140: {
@@ -1276,7 +1276,7 @@ const simple = {
       C: "Links to partners who develop AppExchange apps",
       D: "Fan club for the starring character in a popular video game",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   141: {
@@ -1288,7 +1288,7 @@ const simple = {
       C: "Writing the code for your website on your smartphone",
       D: "Using a LINK cartridge",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   142: {
@@ -1300,7 +1300,7 @@ const simple = {
       C: "Chatter, Store, Home, Leads",
       D: "Reports, Dashboards, Store, Campaign",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   143: {
@@ -1312,7 +1312,7 @@ const simple = {
       C: "Use system objects instead of custom objects whenever possible",
       D: "Use custom objects instead of system objects whenever possible",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   144: {
@@ -1322,7 +1322,7 @@ const simple = {
       A: "true",
       B: "false",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   145: {
@@ -1335,7 +1335,7 @@ const simple = {
       D: "A and B",
       E: "A and C",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   146: {
@@ -1347,7 +1347,7 @@ const simple = {
       C: "Ordering, customer recommendations, and site URLs",
       D: "Site preferences, search statistics, and customer group",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   147: {
@@ -1360,7 +1360,7 @@ const simple = {
       D: "A and B",
       E: "A and C",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   148: {
@@ -1372,7 +1372,7 @@ const simple = {
       C: "It makes merchants and developers happy to add cool features.",
       D: "Many IT organizations like the challenge.",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   149: {
@@ -1384,7 +1384,7 @@ const simple = {
       C: "Overriding can wipe out important processes.",
       D: "A and B",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   150: {
@@ -1397,7 +1397,7 @@ const simple = {
       D: "A and B",
       E: "A and C",
     },
-    answer: "E",
+    answer:["E"],
   },
 
   151: {
@@ -1410,7 +1410,7 @@ const simple = {
       D: "A and B",
       E: "B and C",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   152: {
@@ -1422,7 +1422,7 @@ const simple = {
       C: "It lets you copy code and data in separate batches.",
       D: "A and C",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   153: {
@@ -1435,7 +1435,7 @@ const simple = {
       D: "When should content slots be replicated?",
       E: "A and C",
     },
-    answer: "E",
+    answer:["E"],
   },
 
   154: {
@@ -1448,7 +1448,7 @@ const simple = {
       D: "A and B",
       E: "A and C",
     },
-    answer: "E",
+    answer:["E"],
   },
   155: {
     questionNumber: "Question #:155",
@@ -1459,7 +1459,7 @@ const simple = {
       C: "They significantly reduce update complications.",
       D: "They ensure user-friendly code.",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   156: {
@@ -1471,7 +1471,7 @@ const simple = {
       C: "It makes you sound smart.",
       D: "It improves shopper site adoption.",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   157: {
@@ -1484,7 +1484,7 @@ const simple = {
       D: "A and B",
       E: "A and C",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   158: {
@@ -1494,7 +1494,7 @@ const simple = {
       A: "Yes",
       B: "No",
     },
-    answer: "Yes",
+    answer:["Yes"],
   },
 
   159: {
@@ -1507,7 +1507,7 @@ const simple = {
       D: "A and B",
       E: "A and C",
     },
-    answer: "E",
+    answer:["E"],
   },
 
   160: {
@@ -1517,7 +1517,7 @@ const simple = {
       A: "true",
       B: "false",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   161: {
@@ -1527,7 +1527,7 @@ const simple = {
       A: "true",
       B: "false",
     },
-    answer: "A",
+    answer:["A"],
   },
   162: {
     questionNumber: "Question #:162",
@@ -1536,7 +1536,7 @@ const simple = {
       A: "true",
       B: "false",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   163: {
@@ -1547,7 +1547,7 @@ const simple = {
       B: "Create your custom code in a cartridge, and put that cartridge in front of app_storefront_base in the cartridge path",
       C: "Make changes in app_storefront_base directly",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   164: {
@@ -1559,7 +1559,7 @@ const simple = {
       C: "Cartridges uploaded to one version automatically get copied to other versions",
       D: "During execution, the cartridge path looks for cartridges in the active version",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   165: {
@@ -1571,7 +1571,7 @@ const simple = {
       C: "The first server.js found in the cartridge path",
       D: "server.js in the modules/server folder",
     },
-    answer: "D",
+    answer:["D"],
   },
   166: {
     questionNumber: "Question #:166",
@@ -1582,7 +1582,7 @@ const simple = {
       C: "Controllers are the main entry point into the storefront application",
       D: "Controllers gather the data from the model, and pass the data to the ISML template",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   167: {
@@ -1594,7 +1594,7 @@ const simple = {
       C: "Preppend",
       D: "Replace",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   168: {
@@ -1604,7 +1604,7 @@ const simple = {
       A: "false",
       B: "true",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   169: {
@@ -1616,7 +1616,7 @@ const simple = {
       C: "It is the same as using a replace on the route",
       D: "It does not break anything, just exits the route",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   170: {
@@ -1628,7 +1628,7 @@ const simple = {
       C: "Under dw.system.Response documentation",
       D: "Under the commonJS documentation",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   172: {
@@ -1640,7 +1640,7 @@ const simple = {
       C: "he module for the View",
       D: "It is a template in Business Manager",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   173: {
@@ -1652,7 +1652,7 @@ const simple = {
       C: "It is a serializable JSON object",
       D: "It is a model in the modules folder",
     },
-    answer: "B, C",
+    answer:["B, C"],
   },
 
   174: {
@@ -1664,7 +1664,7 @@ const simple = {
       C: "It is a hardcoded JSON file that decorates the model",
       D: "It is a person that decorates homes",
     },
-    answer: "B",
+    answer:["B"],
   },
   175: {
     questionNumber: "Question #:175",
@@ -1675,7 +1675,7 @@ const simple = {
       C: "Use base.call() passing the same parameters that the base model needs",
       D: "Use yourmodel.extends(basemodel)",
     },
-    answer: "A, C",
+    answer:["A, C"],
   },
 
   176: {
@@ -1685,7 +1685,7 @@ const simple = {
       A: "true",
       B: "false",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   177: {
@@ -1697,7 +1697,7 @@ const simple = {
       C: "Internet Store Markup Language",
       D: "Individual Store Markup Language",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   178: {
@@ -1709,7 +1709,7 @@ const simple = {
       C: "They receive a JSON model from the controller",
       D: "All of the above",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   179: {
@@ -1719,7 +1719,7 @@ const simple = {
       A: "false",
       B: "true",
     },
-    answer: "B",
+    answer:["B"],
   },
   180: {
     questionNumber: "Question #:180",
@@ -1730,7 +1730,7 @@ const simple = {
       C: "iselse",
       D: "isactivedatahead",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   181: {
@@ -1742,7 +1742,7 @@ const simple = {
       C: "isactivedatacontext",
       D: "isif",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   182: {
@@ -1752,7 +1752,7 @@ const simple = {
       A: "true",
       B: "false",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   183: {
@@ -1764,7 +1764,7 @@ const simple = {
       C: "checkout.isml",
       D: "page.isml",
     },
-    answer: "C, D",
+    answer:["C, D"],
   },
 
   184: {
@@ -1774,7 +1774,7 @@ const simple = {
       A: "true",
       B: "false",
     },
-    answer: true,
+    answer:[true],
   },
   185: {
     questionNumber: "Question #:185",
@@ -1785,7 +1785,7 @@ const simple = {
       C: "PNG",
       D: "HTML",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   186: {
@@ -1797,7 +1797,7 @@ const simple = {
       C: "Newsletter-Handler",
       D: "Login-Handler",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   187: {
@@ -1809,7 +1809,7 @@ const simple = {
       C: "pdict.label",
       D: "metadata.label.field",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   190: {
@@ -1821,7 +1821,7 @@ const simple = {
       C: "Bottom",
       D: "Base",
     },
-    answer: "D",
+    answer:["D"],
   },
 
   191: {
@@ -1833,7 +1833,7 @@ const simple = {
       C: "Response.json()",
       D: "Resply.json()",
     },
-    answer: "C",
+    answer:["C"],
   },
   193: {
     questionNumber: "Question #:193",
@@ -1844,7 +1844,7 @@ const simple = {
       C: "Cross-site Request Form",
       D: "Client-side Reminder Form",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   194: {
@@ -1856,7 +1856,7 @@ const simple = {
       C: "Metadata",
       D: "Transactions",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   195: {
@@ -1869,7 +1869,7 @@ const simple = {
       D: "Map all custom fields",
       E: "Import folder from Business Manager",
     },
-    answer: "A, B",
+    answer:["A, B"],
   },
   196: {
     questionNumber: "Question #:196",
@@ -1880,7 +1880,7 @@ const simple = {
       C: "Middleware",
       D: "All of the above",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   197: {
@@ -1890,7 +1890,7 @@ const simple = {
       A: "true",
       B: "false",
     },
-    answer: "A",
+    answer:["A"],
   },
 
   198: {
@@ -1903,7 +1903,7 @@ const simple = {
       D: "Line",
       E: "Custom Object",
     },
-    answer: "A, C",
+    answer:["A, C"],
   },
 
   199: {
@@ -1915,7 +1915,7 @@ const simple = {
       C: "Complete.Route",
       D: "pdict.beforeRoute",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   200: {
@@ -1927,7 +1927,7 @@ const simple = {
       C: "Custom Hook",
       D: "Standard Hook",
     },
-    answer: "A",
+    answer:["A"],
   },
   201: {
     questionNumber: "Question #:201",
@@ -1938,7 +1938,7 @@ const simple = {
       C: "SFRA Hook",
       D: "Transaction Hook",
     },
-    answer: "C",
+    answer:["C"],
   },
 
   202: {
@@ -1950,7 +1950,7 @@ const simple = {
       C: "Business Manager",
       D: "Classes",
     },
-    answer: "B",
+    answer:["B"],
   },
 
   203: {
@@ -1962,6 +1962,6 @@ const simple = {
       C: "Basket.purchase",
       D: "json.hooks",
     },
-    answer: "B",
+    answer:["B"],
   },
-}
+};
