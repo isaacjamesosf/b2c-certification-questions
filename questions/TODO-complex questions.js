@@ -495,15 +495,4 @@ const complex = {
 	C.	Breaks the process into separate loops.
 	Avoid using an Iterator and use a Collection instead.
 	Answer: B;
-
-    questionNumber: "Question #:9"
-    Given the code snippet above, what should be added after this code so it can be used for page component display?",
-    opt
-      A. Base.render = render;
-      B. Module.exports.render = render;
-      C. Module.exports = render;
-      D. Module.exports = server.exports();
-    
-    answer: "D";
-
 };
