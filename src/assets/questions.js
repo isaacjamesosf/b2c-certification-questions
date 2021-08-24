@@ -1026,7 +1026,7 @@ export const questions = {
       C: "Create an Attribute Group with the desired attributes in it",
       D: "Sort the attributes in the custom object type",
     },
-    answer: "A; ",
+    answer: "A",
   },
 
   118: {
