@@ -33,4 +33,12 @@ export const getHomeStyle = (theme) => ({
     padding: theme.spacing(3),
     width: "100%"
   },
+  inputs: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
+  },
+  buttons: {
+    marginTop: theme.spacing(1.3),
+    marginBottom: theme.spacing(1.3),
+  }
 });

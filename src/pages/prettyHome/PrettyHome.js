@@ -19,6 +19,7 @@ import { getHomeStyle } from "../../utils/styles/homeStyle";
 import { getQuestions } from "../../utils/questions";
 import { Checkbox } from "@material-ui/core";
 import HeaderTitle from "../../components/HeadTitle";
+import Range from "../../components/Range";
 
 const useStyles = makeStyles((theme) => getHomeStyle(theme));
 
@@ -29,7 +30,7 @@ function PrettyHome({ window }) {
   const [b2cQuestions, setB2cQuestions] = useState(questions);
   const [showAnswers, setShowAnswers] = useState(false);
   const [random, setRandom] = useState(false);
-  const [questionsQty, setQuestionsQty] = useState(20);
+  const [questionsQty, setQuestionsQty] = useState(10);
   const [questionsSort, setQuestionsSort] = useState([]);
 
   const onSelectOption = (questionNumber, selectedOption) => {
@@ -63,8 +64,15 @@ function PrettyHome({ window }) {
     );
   }, [b2cQuestions, questionsSort.length]);
 
+  const updateB2cQuestions = useCallback(
+    (args) => {
+      setQuestionsSort(getQuestions({ ...args, questionsQty, random }));
+    },
+    [questionsQty, random]
+  );
+
   useEffect(() => {
-    setQuestionsSort(getQuestions({ questionsQty, random }));
+    updateB2cQuestions();
   }, [questionsQty, random]);
 
   const drawer = (
@@ -74,21 +82,27 @@ function PrettyHome({ window }) {
       </div>
       <Divider />
       <List style={{ textAlign: "center" }}>
-        <ListItem button>
+        <ListItem>
+          <Range classes={classes} onSubmit={updateB2cQuestions} />
+          <Divider />
+        </ListItem>
+        <Divider />
+        <ListItem>
           <ListItemText primary={`Quantity:`} />
           <DropdownNumber
             value={questionsQty}
             onChange={handleDropdownQuestionsQty}
           />
         </ListItem>
-        <ListItem button>
+        <Divider />
+        <ListItem>
           <Checkbox
             checked={showAnswers}
             onChange={(e) => setShowAnswers(e.target.checked)}
           />
           <ListItemText primary="Show Answers" />
         </ListItem>
-        <ListItem button>
+        <ListItem>
           <Checkbox
             checked={random}
             onChange={(e) => setRandom(e.target.checked)}
@@ -97,16 +111,16 @@ function PrettyHome({ window }) {
         </ListItem>
         <Divider />
         <Button
+          className={classes.buttons}
           variant="contained"
           color="primary"
-          style={{ marginTop: "10px", marginBottom: "10px" }}
           onClick={handleSubmit}
         >
           Submit
         </Button>
         <Divider />
         {questionsSort.map((number) => (
-          <Link href={`#${number}`} style={{ textDecoration: "none" }}>
+          <Link href={`#${number}`}>
             <ListItem button key={number}>
               <ListItemText primary={`Question ${number}`} />
             </ListItem>
