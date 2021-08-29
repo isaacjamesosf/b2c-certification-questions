@@ -6,12 +6,13 @@ export const getQuestions = ({
   start = 1,
   end,
 }) => {
+  const questionKeys = Object.keys(questions);
   const b2cQuestions = random
-    ? Object.keys(questions)
+    ? questionKeys
         .map((x) => ({ x, r: Math.random() }))
         .sort((a, b) => a.r - b.r)
         .map((a) => a.x)
-    : Object.keys(questions);
+    : questionKeys;
 
   return questionsQty || end > 1
     ? b2cQuestions.slice(--start, end || questionsQty)

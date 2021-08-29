@@ -9,7 +9,7 @@ const OPTIONS = [
   { label: "50", value: 50 },
   { label: "80", value: 80 },
   { label: "100", value: 100 },
-  { label: "All", value: -1 },
+  { label: "All", value: 1000 },
 ];
 
 const DropdownNumber = ({ value, onChange }) => (
