@@ -359,6 +359,7 @@ export const questions = {
       D: "ISML.renderTemplate(‘content/custom/customLandingPage’);",
     },
     answer:["D"],
+    hasImage: true,
   },
 
   41: {
@@ -549,6 +550,7 @@ export const questions = {
       D: "Apple Pay",
     },
     answer:["D; SOMETHING LIKE THAT WHICH THE ASNWER WAS PAYMENT METHODS. THE QUESTION WAS ABOUT ADD MAKES ENABLED AN EXISTING CREDIT CARD THAT WAS CREATED BUT DISABLED, WHERE IN BM TURN THAT CREDIT CARD ENABLED"],
+    hasImage: true,
   },
 
   65: {
@@ -967,6 +969,7 @@ export const questions = {
       D: "The CSRF settings in Business Manager are properly configured.",
     },
     answer:["C"],
+    hasImage: true,
   },
 
   110: {
@@ -1506,7 +1509,7 @@ export const questions = {
       A: "Yes",
       B: "No",
     },
-    answer:["Yes"],
+    answer:["A"],
   },
 
   159: {
