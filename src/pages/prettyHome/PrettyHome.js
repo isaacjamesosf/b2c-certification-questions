@@ -53,10 +53,10 @@ function PrettyHome({ window }) {
 
   const handleSubmit = useCallback(() => {
     const b2cQuestionsArr = Object.keys(b2cQuestions);
-    const correctAnswer = b2cQuestionsArr.filter(
-      (number) =>
-        b2cQuestions[number].userAnswer &&
-        b2cQuestions[number].userAnswer === b2cQuestions[number].answer
+    const correctAnswer = b2cQuestionsArr.filter((number) =>
+      b2cQuestions[number].answer
+        .split(",")
+        .every((x) => b2cQuestions[number].userAnswer?.some((y) => x.trim() === y.trim()))
     ).length;
 
     alert(
@@ -73,7 +73,7 @@ function PrettyHome({ window }) {
 
   useEffect(() => {
     updateB2cQuestions();
-  }, [questionsQty, random]);
+  }, [questionsQty, random, updateB2cQuestions]);
 
   const drawer = (
     <div>

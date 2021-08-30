@@ -1774,7 +1774,7 @@ export const questions = {
       A: "true",
       B: "false",
     },
-    answer: true,
+    answer: "A",
   },
   185: {
     questionNumber: "Question #:185",
@@ -1974,7 +1974,7 @@ export const questions = {
       C: `Breaks the process into separate loops.`,
       D: `Avoid using an Iterator and use a Collection instead.`,
     },
-    answer: ["B"],
+    answer: "B",
     hasImage: true,
   },
   114: {
@@ -1989,7 +1989,7 @@ export const questions = {
       C: `Request that the developer’s account be given permission to the Log Centerof the current realm`,
       D: `Set the root log level to debug`,
     },
-    answer: ["B"],
+    answer: "B",
   },
 
   119: {
@@ -2004,7 +2004,7 @@ export const questions = {
       C: `Logs will be written to the log file with a prefix customwarn.`,
       D: `Logs will be written to the log file with a prefix custom-loggerFile.`,
     },
-    answer: ["A"],
+    answer: "A",
   },
 
   122: {
@@ -2018,7 +2018,7 @@ export const questions = {
       C: `Add a local <isinclude> tag to inspect the topLevel function in the call stack.`,
       D: `Add an <isdebug> tag to allow the inspection of global variables.`,
     },
-    answer: ["C"],
+    answer: "C",
   },
   171: {
     questionNumber: "Question #:171",
@@ -2036,7 +2036,7 @@ export const questions = {
       A: `True`,
       B: `False`,
     },
-    answer: ["A"],
+    answer: "A",
   },
 
   192: {
@@ -2056,7 +2056,7 @@ export const questions = {
       C: `All of the above`,
       D: `No errors will display`,
     },
-    answer: ["A"],
+    answer: "A",
   },
   111: {
     questionNumber: "Question #:111",
@@ -2074,7 +2074,7 @@ export const questions = {
       C: `Your parcel weighs 10 undefined.`,
       D: `Your parcel weighs 10 kilos`,
     },
-    answer: ["A"],
+    answer: "A",
   },
   90: {
     questionNumber: "Question #:90",
@@ -2087,7 +2087,7 @@ export const questions = {
       C: `addressForm.invalidateFormElement(addressForm.addressid);`,
       D: `addressForm.addresssid.invalidateFormElement();`,
     },
-    answer: ["C"],
+    answer: "C",
     hasImage: true,
   },
 
@@ -2102,7 +2102,7 @@ export const questions = {
       C: `Change the HTTP method to GET.`,
       D: `Include an authentication token in the request.`,
     },
-    answer: ["C"],
+    answer: "C",
     hasImage: true,
   },
 
@@ -2123,7 +2123,7 @@ export const questions = {
       C: `dw.ocapi.shop.basket.shipment.beforeDELETE`,
       D: `dw.ocapi.shop.baskep.shopment.beforePOST`,
     },
-    answer: ["B, D"],
+    answer: "B, D",
   },
 
   105: {
@@ -2137,7 +2137,7 @@ export const questions = {
       C: `/inventory_list_search`,
       D: `/products/*`,
     },
-    answer: ["D"],
+    answer: "D",
     hasImage: true,
   },
   52: {
@@ -2149,7 +2149,7 @@ export const questions = {
       C: `templates/resources`,
       D: `templates/default/resources`,
     },
-    answer: ["C"],
+    answer: "C",
     answernote: `Documentation
 	•	templates/de should be used to hold the specific ISMLs for de locale
 	•	templates/default should be used to hold the generic ISMLs that should be loaded for all languages as fallback
@@ -2176,7 +2176,7 @@ export const questions = {
       C: `In the controller function that handles the submitted form`,
       D: `In the model function that persists the form data`,
     },
-    answer: ["B"],
+    answer: "B",
   },
 
   59: {
@@ -2191,7 +2191,7 @@ export const questions = {
       C: `loopstatus.product`,
       D: `pdict.product`,
     },
-    answer: ["A"],
+    answer: "A",
   },
 
   62: {
@@ -2205,7 +2205,7 @@ export const questions = {
       C: `Logger.fault(‘Unable to find Apple Pay payment instrument for order.‘+paymentInstruments);`,
       D: `Logger.error(‘Unable to find Apple Pay payment instrument for order.‘+paymentInstruments);`,
     },
-    answer: ["A"],
+    answer: "A",
   },
 
   64: {
@@ -2217,7 +2217,7 @@ export const questions = {
       C: `Implement template decorators paired with replace tags`,
       D: `Embed partial files using ISML expressions`,
     },
-    answer: ["B, C"],
+    answer: "B, C",
     answerNote: `
 		•	<isscript> on SFRA is most used to include assets(JS and CSS) into the page. Documentation
 		•	<isinclude> documentation
@@ -2241,7 +2241,7 @@ export const questions = {
       C: `Create a copy of existing address.xml file in the default folder. Rename that file to address_en_US.xml`,
       D: `Create a new sub-folder in the forms folder. Name it en_US. Copy existing address.xml file in the new folder.`,
     },
-    answer: ["D"],
+    answer: "D",
   },
 
   69: {
@@ -2257,7 +2257,7 @@ export const questions = {
       C: `The Search Refinement definition is not set up for the New Arrivals Category.`,
       D: `The Search Refinement definitions is not set up for the Root Category`,
     },
-    answer: ["A"],
+    answer: "A",
   },
 
   78: {
@@ -2271,7 +2271,7 @@ export const questions = {
       C: `res.render('/content/myPage', {data: myDataObject }); next();`,
       D: `res.render('/content/myPage'); next();`,
     },
-    answer: ["B, C"],
+    answer: "B, C",
   },
 
   88: {
@@ -2283,7 +2283,7 @@ export const questions = {
       C: `Storefront Toolkit`,
       D: `Reports and Dashboards Module`,
     },
-    answer: ["C"],
+    answer: "C",
   },
 
   89: {
@@ -2303,7 +2303,7 @@ export const questions = {
       C: `Task A, then B, then C`,
       D: `Task B, then A, then C`,
     },
-    answer: ["D"],
+    answer: "D",
   },39: {
     questionNumber: "Question #:39",
     description: `Given a file in a plug-in cartridge with the following code:
@@ -2324,7 +2324,7 @@ export const questions = {
       C: `A decorator`,
       D: `A model`,
     },
-    answer: ["B"],
+    answer: "B",
   },
   40: {
     questionNumber: "Question #:40",
@@ -2341,7 +2341,7 @@ export const questions = {
       C: `Server.forms.getForm(‘newsletter’);`,
       D: `Server.forms.getForm(‘dwfrm_newsletter’)`,
     },
-    answer: ["C"],
+    answer: "C",
   },
 
   44: {
@@ -2355,7 +2355,7 @@ export const questions = {
       C: `Change the "read_attributes" value to: "(items)".`,
       D: `Change the "methods" value to: ["get", "post"].`,
     },
-    answer: ["D"],
+    answer: "D",
     hasImage: true,
   },
 
@@ -2375,7 +2375,7 @@ export const questions = {
       C: `products`,
       D: `info-export`,
     },
-    answer: ["B"],
+    answer: "B",
   },
 
   49: {
@@ -2391,7 +2391,7 @@ export const questions = {
       C: `Set the custom attribute as localizable`,
       D: `Add a custom attribute for each locale`,
     },
-    answer: ["C"],
+    answer: "C",
   },
   6: {
     questionNumber: "Question #:6",
@@ -2406,7 +2406,7 @@ export const questions = {
       C: `In the Products module, create a product named “The Basics” and add the products to the Product Sets tab.`,
       D: `In the Product Sets module, create a product set named “The Basics”.`,
     },
-    answer: ["B"],
+    answer: "B",
   },
 
   7: {
@@ -2427,7 +2427,7 @@ export const questions = {
       D: `Add an <action/> node to the form defition XML with the attribute formid=”addRewardPass”
 	No change to Cart.js controller`,
     },
-    answer: ["A"],
+    answer: "A",
     hasImage: true,
   },
 
@@ -2442,7 +2442,7 @@ export const questions = {
       C: `Logger.getLogger().debug("Error retrieving profile email, Status Code: {0} was returned.", http.statusCode);`,
       D: `Logger.getLogger(‘profile’).debug("Error retrieving profile email, Status Code: {0} was returned.", http.statusCode);`,
     },
-    answer: ["D"],
+    answer: "D",
     answerNote: "SOMETHING LIKE THAT WHERE THE GOAL WAS TO KNOW HOW TO LOG A CUSTOM LOG AT DEBUG LEVE",
     hasImage: true,
   },
@@ -2459,7 +2459,7 @@ export const questions = {
       C: `custom-export`,
       D: `custom-xyz`,
     },
-    answer: ["D"],
+    answer: "D",
   },
 
   21: {
@@ -2472,7 +2472,7 @@ export const questions = {
       C: `Search Settings (Search and Sites)`,
       D: `Promotions ( sites and online marketing)`,
     },
-    answer: ["C, D"],
+    answer: "C, D",
   },
 
   25: {
@@ -2494,7 +2494,7 @@ export const questions = {
       C: `return res;`,
       D: `res.next();`,
     },
-    answer: ["A"],
+    answer: "A",
     answerNote: "NOT EXACTLY THIS ONE BUT ONE QUESTION ABOUT HOW TO APPLY CACHE ON SFRA USING ITS BEST PRACTICES: ANSWER: cache.applyDefaultCache",
   },
 
@@ -2511,7 +2511,7 @@ export const questions = {
       C: `Use an SFRA controller, because it runs server-side, the state is automatically maintained`,
       D: `Use a client-side cookie to store the information for the session duration.`,
     },
-    answer: ["B"],
+    answer: "B",
   },
 
   36: {
@@ -2537,7 +2537,7 @@ export const questions = {
       C: `The Custom Object creation is not wrapped in a Transaction.`,
       D: `The CustomObjectMgr variable should be declare outside of the route.`,
     },
-    answer: ["C"],
+    answer: "C",
   },
   5: {
     questionNumber: "Question #:5",
@@ -2550,7 +2550,7 @@ export const questions = {
       D: `The product is online and searchable`,
       E: `The search index is built.`,
     },
-    answer: ["B,C,D"],
+    answer: "B,C,D",
   },
   1: {
     questionNumber: "Question #:1",
@@ -2567,7 +2567,7 @@ export const questions = {
       C: `Create a service and a Sitepreference that induce the service to respond witch a mock response using a conditional.`,
       D: `Create two services, one mock and the real one, and a Sitepreference that enable the mock or the real one`,
     },
-    answer: ["A"],
+    answer: "A",
     answerNote: `Actually the proper response should be B(Create a service and implement the mockFill callback and set the service mode to mock.) but with one consideration: There is no MockFill function in the API but mockfull`,
   }
 

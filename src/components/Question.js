@@ -1,5 +1,5 @@
+import { useCallback, useState } from "react";
 import { Box, ListItem, ListItemText } from "@material-ui/core";
-import { useState } from "react";
 import { Label, InputRadio } from "./Styled";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 
@@ -9,7 +9,30 @@ const Question = ({
   onSelectOption,
   showAnswers,
 }) => {
-  const [selectedOption, setSelectedOption] = useState(false);
+  const totalAnswers = question.answer.split(",").length;
+  const [selectedOptions, setSelectedOptions] = useState([]);
+
+  const onSelectOptionHandle = useCallback(
+    (questionNumber, option) => {
+      if (selectedOptions.includes(option)) {
+        const newSelectedOptions = selectedOptions.filter(
+          (opt) => opt !== option
+        );
+        setSelectedOptions(newSelectedOptions);
+        onSelectOption(questionNumber, newSelectedOptions);
+      }
+      if (totalAnswers < 2) {
+        onSelectOption(questionNumber, [option]);
+        setSelectedOptions([option]);
+      } else if (totalAnswers !== selectedOptions.length) {
+        setSelectedOptions(() => {
+          onSelectOption(questionNumber, [...selectedOptions, option]);
+          return [...selectedOptions, option];
+        });
+      }
+    },
+    [onSelectOption, selectedOptions, totalAnswers]
+  );
 
   return (
     <div id={Number(questionNumber)}>
@@ -17,20 +40,20 @@ const Question = ({
         <ListItem align="left">
           <ListItemText
             primary={`${questionNumber}) - ${question.description}`}
+            secondary={`${totalAnswers < 2 ? "" : `Pick ${totalAnswers}`}`}
+            secondaryTypographyProps={{ color: "white" }}
+            style={{ whiteSpace: "pre-wrap" }}
           />
         </ListItem>
       </Box>
-      {Object.keys(question.options).map((option, idx) => (
+      {Object.keys(question.options).map((option) => (
         <div key={option}>
           <Label>
             {option})
             <InputRadio
               type="radio"
-              checked={selectedOption === option}
-              onClick={() => {
-                onSelectOption(questionNumber, option);
-                setSelectedOption(option);
-              }}
+              checked={selectedOptions.includes(option)}
+              onClick={() => onSelectOptionHandle(questionNumber, option)}
             />
             {question.options[option]}
           </Label>
@@ -41,12 +64,18 @@ const Question = ({
           <>
             <ListItemText
               secondary={
-                question.userAnswer === question.answer
+                question.answer
+                  .split(",")
+                  .every((x) => selectedOptions.some((y) => y === x))
                   ? "Correct"
                   : `The answer is: ${question.answer}`
               }
             />
-            {question.userAnswer === question.answer && <CheckCircleIcon color="#fff" style={{color: "green"}} />}
+            {question.answer
+              .split(",")
+              .every((x) =>
+                selectedOptions.some((y) => y.trim() === x.trim())
+              ) && <CheckCircleIcon style={{ color: "green" }} />}
           </>
         ) : (
           <ListItemText secondary="*********" />
