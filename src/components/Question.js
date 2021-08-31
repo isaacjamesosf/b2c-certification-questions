@@ -36,7 +36,7 @@ const Question = ({
   );
 
   return (
-    <div id={Number(questionNumber)}>
+    <div id={Number(questionNumber)} style={{textAlign: "center"}}>
       <Box bgcolor="#3f51b5" color="#fff" left={true} mt={4} border={1}>
         <ListItem align="left">
           <ListItemText
