@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import { Box, ListItem, ListItemText } from "@material-ui/core";
 import { Label, InputRadio } from "./Styled";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
+import { images } from "../assets/images";
 
 const Question = ({
   questionNumber,
@@ -45,6 +46,13 @@ const Question = ({
             style={{ whiteSpace: "pre-wrap" }}
           />
         </ListItem>
+        {images[questionNumber] && (
+          <img
+            src={images[questionNumber].default}
+            alt={`question number ${questionNumber}`}
+            style={{ width: "100%", maxWidth: "1000px" }}
+          />
+        )}
       </Box>
       {Object.keys(question.options).map((option) => (
         <div key={option}>
