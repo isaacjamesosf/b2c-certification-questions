@@ -864,7 +864,7 @@ export const questions = {
 
   100: {
     questionNumber: "Question #:100",
-    description: "A Digital Developer has a new requirement to disable the 'Discover'credit card type for all checkouts. What does the Developer need to change in Business Manager to fulfill this requirement?",
+    description: `A Digital Developer has a new requirement to disable the "Discover" credit card type for all checkouts. What does the Developer need to change in Business Manager to fulfill this requirement?`,
     options: {
       A: "Checkout exclusion rules in the Merchant Tools > Site Preferences > Checkout Preferences module.",
       B: "Credit card exclusion rules in the Merchant Tools > Site Preferences > Payment Preferences module.",
