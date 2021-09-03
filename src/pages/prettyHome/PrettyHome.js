@@ -4,11 +4,13 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Divider from "@material-ui/core/Divider";
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
-import IconButton from "@material-ui/core/IconButton";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import MenuIcon from "@material-ui/icons/Menu";
+import IconButton from "@material-ui/core/IconButton";
+import DoneIcon from "@material-ui/icons/Done";
+import HistoryIcon from "@material-ui/icons/History";
 import Toolbar from "@material-ui/core/Toolbar";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Button, Link } from "@material-ui/core";
@@ -20,6 +22,11 @@ import { getQuestions } from "../../utils/questions";
 import { Checkbox } from "@material-ui/core";
 import HeaderTitle from "../../components/HeadTitle";
 import Range from "../../components/Range";
+import ScrollDialog from "../../components/modal/ScrollDialog";
+import HistoricCard from "../../components/historicCard.js/HistoricCard";
+import usePersistedState from "../../hooks/usePersistedState";
+import Swal from "sweetalert2";
+import { HISTORIC_KEY_STORAGE } from "../../utils/constants/appConstants";
 
 const useStyles = makeStyles((theme) => getHomeStyle(theme));
 
@@ -32,6 +39,22 @@ function PrettyHome({ window }) {
   const [random, setRandom] = useState(false);
   const [questionsQty, setQuestionsQty] = useState(10);
   const [questionsSort, setQuestionsSort] = useState([]);
+  const [historic, setHistoric] = usePersistedState([]);
+
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = useCallback(() => {
+    setOpen(true);
+  }, []);
+
+  const handleCloseDiolog = useCallback(() => {
+    setOpen(false);
+  }, []);
+
+  const handleClearHistoric = useCallback(() => {
+    setHistoric([]);
+    localStorage.removeItem(HISTORIC_KEY_STORAGE);
+  }, [setHistoric]);
 
   const onSelectOption = (questionNumber, selectedOption) => {
     setB2cQuestions((oldState) => ({
@@ -52,17 +75,36 @@ function PrettyHome({ window }) {
   }, []);
 
   const handleSubmit = useCallback(() => {
-    const b2cQuestionsArr = Object.keys(b2cQuestions);
-    const correctAnswer = b2cQuestionsArr.filter((number) =>
+    const correctAnswer = questionsSort.filter((number) =>
       b2cQuestions[number].answer
         .split(",")
-        .every((x) => b2cQuestions[number].userAnswer?.some((y) => x.trim() === y.trim()))
-    ).length;
-
-    alert(
-      `You got ${correctAnswer} of ${questionsSort.length} questions right`
+        .every((x) =>
+          b2cQuestions[number].userAnswer?.some((y) => x.trim() === y.trim())
+        )
     );
-  }, [b2cQuestions, questionsSort.length]);
+
+    const wrongAnswer = questionsSort.filter(
+      (value) => -1 === correctAnswer.indexOf(value)
+    );
+
+    const result = {
+      questions: questionsSort,
+      correctAnswer,
+      wrongAnswer,
+      percentage: Number(
+        (correctAnswer.length / questionsSort.length) * 100
+      ).toFixed(1),
+      date: new Date().toLocaleString(),
+    };
+
+    setHistoric([result, ...historic]);
+    Swal.fire({
+      icon: result.percentage < 70 ? "error" : "success",
+      title: `${result.percentage}%`,
+      text: `You got ${correctAnswer.length} of ${questionsSort.length} questions right`,
+      footer: "<p>This result is saved on historic.</p>",
+    });
+  }, [b2cQuestions, historic, questionsSort, setHistoric]);
 
   const updateB2cQuestions = useCallback(
     (args) => {
@@ -119,10 +161,27 @@ function PrettyHome({ window }) {
           Submit
         </Button>
         <Divider />
+        <Divider />
+        <Button
+          className={classes.buttons}
+          variant="contained"
+          color="primary"
+          onClick={handleClickOpen}
+          startIcon={<HistoryIcon />}
+        >
+          Historic
+        </Button>
+        <Divider />
         {questionsSort.map((number) => (
           <Link href={`#${number}`}>
             <ListItem button key={number}>
               <ListItemText primary={`Question ${number}`} />
+              {b2cQuestions[number].userAnswer &&
+              b2cQuestions[number].userAnswer.length ? (
+                <DoneIcon />
+              ) : (
+                ""
+              )}
             </ListItem>
           </Link>
         ))}
@@ -186,6 +245,20 @@ function PrettyHome({ window }) {
       </nav>
       <main className={classes.content}>
         <div className={classes.toolbar} />
+        <ScrollDialog
+          textHeader="Historic"
+          open={open}
+          onClose={handleCloseDiolog}
+          handleClear={handleClearHistoric}
+        >
+          <HistoricCard
+            historic={historic}
+            handleReview={(questionsNumber) => {
+              setQuestionsSort(questionsNumber);
+              handleCloseDiolog();
+            }}
+          />
+        </ScrollDialog>
         {questionsSort.map((questionNumber) => (
           <Question
             key={questionNumber}

@@ -1,8 +1,9 @@
 import { useCallback, useState } from "react";
 import { Box, ListItem, ListItemText } from "@material-ui/core";
-import { Label, InputRadio } from "./Styled";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
+import CancelIcon from "@material-ui/icons/Cancel";
 import { images } from "../assets/images";
+import Option from "./option/Option";
 
 const Question = ({
   questionNumber,
@@ -21,8 +22,7 @@ const Question = ({
         );
         setSelectedOptions(newSelectedOptions);
         onSelectOption(questionNumber, newSelectedOptions);
-      }
-      if (totalAnswers < 2) {
+      } else if (totalAnswers < 2) {
         onSelectOption(questionNumber, [option]);
         setSelectedOptions([option]);
       } else if (totalAnswers !== selectedOptions.length) {
@@ -36,7 +36,7 @@ const Question = ({
   );
 
   return (
-    <div id={Number(questionNumber)} style={{textAlign: "center"}}>
+    <div id={Number(questionNumber)} style={{ textAlign: "center" }}>
       <Box bgcolor="#3f51b5" color="#fff" left={true} mt={4} border={1}>
         <ListItem align="left">
           <ListItemText
@@ -55,17 +55,13 @@ const Question = ({
         )}
       </Box>
       {Object.keys(question.options).map((option) => (
-        <div key={option}>
-          <Label>
-            {option})
-            <InputRadio
-              type="radio"
-              checked={selectedOptions.includes(option)}
-              onClick={() => onSelectOptionHandle(questionNumber, option)}
-            />
-            {question.options[option]}
-          </Label>
-        </div>
+        <Option
+          key={option}
+          letter={option}
+          description={question.options[option]}
+          checked={selectedOptions.includes(option)}
+          onClick={() => onSelectOptionHandle(questionNumber, option)}
+        />
       ))}
       <ListItem>
         {showAnswers ? (
@@ -83,7 +79,11 @@ const Question = ({
               .split(",")
               .every((x) =>
                 selectedOptions.some((y) => y.trim() === x.trim())
-              ) && <CheckCircleIcon style={{ color: "green" }} />}
+              ) ? (
+              <CheckCircleIcon style={{ color: "green" }} />
+            ) : (
+              <CancelIcon style={{ color: "red" }} />
+            )}
           </>
         ) : (
           <ListItemText secondary="*********" />

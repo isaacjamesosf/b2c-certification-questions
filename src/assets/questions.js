@@ -887,7 +887,7 @@ export const questions = {
 
   102: {
     questionNumber: "Question #:102",
-    description: "A client uses tax tables in Business Manager to calculate tax. They recently started shipping to a new country, Italy, and the taxi s not being calculated correctly on the Storefront. What is the likely problem?",
+    description: "A client uses tax tables in Business Manager to calculate tax. They recently started shipping to a new country, Italy, and the tax is not being calculated correctly on the Storefront. What is the likely problem?",
     options: {
       A: "Tax Region is configured wrong.",
       B: "Tax Country is missing",
