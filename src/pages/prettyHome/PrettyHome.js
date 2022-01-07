@@ -51,6 +51,21 @@ function PrettyHome({ window }) {
     setOpen(false);
   }, []);
 
+  const handleOnReview = useCallback(() => {
+    setQuestionsSort([]);
+    setTimeout(() => {
+      historic.map(item => {
+        setQuestionsSort( oldState => {
+          return [
+            ...oldState,
+            ...item.wrongAnswer
+          ]
+        })
+      })
+      handleCloseDiolog();
+    }, 10);
+  }, [handleCloseDiolog, historic]);
+
   const handleClearHistoric = useCallback(() => {
     setHistoric([]);
     localStorage.removeItem(HISTORIC_KEY_STORAGE);
@@ -249,6 +264,7 @@ function PrettyHome({ window }) {
           textHeader="Historic"
           open={open}
           onClose={handleCloseDiolog}
+          onReview={handleOnReview}
           handleClear={handleClearHistoric}
         >
           <HistoricCard

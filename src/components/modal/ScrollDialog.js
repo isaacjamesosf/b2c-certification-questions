@@ -10,6 +10,7 @@ function ScrollDialog({
   textHeader,
   open = false,
   onClose,
+  onReview,
   handleClear,
   children,
 }) {
@@ -49,6 +50,9 @@ function ScrollDialog({
           </Button>
           <Button variant="contained" onClick={onClose} color="primary">
             Close
+          </Button>
+          <Button variant="contained" onClick={onReview} color="primary">
+            Review All Incorrects
           </Button>
         </DialogActions>
       </Dialog>
