@@ -51,19 +51,22 @@ function PrettyHome({ window }) {
     setOpen(false);
   }, []);
 
+  function onlyUnique(value, index, self) {
+    return self.indexOf(value) === index;
+  }
+
   const handleOnReview = useCallback(() => {
     setQuestionsSort([]);
-    setTimeout(() => {
-      historic.map(item => {
-        setQuestionsSort( oldState => {
-          return [
-            ...oldState,
-            ...item.wrongAnswer
-          ]
-        })
+    historic.map(item => {
+      setQuestionsSort( oldState => {
+        var newQuestions = [
+          ...oldState,
+          ...item.wrongAnswer
+        ];
+        return newQuestions.filter(onlyUnique).sort((a, b) => a-b);
       })
-      handleCloseDiolog();
-    }, 10);
+    })
+    handleCloseDiolog();
   }, [handleCloseDiolog, historic]);
 
   const handleClearHistoric = useCallback(() => {
