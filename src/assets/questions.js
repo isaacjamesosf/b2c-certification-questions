@@ -1,4 +1,4 @@
-export const questions = {
+export const b2cQuestions = {
   2: {
     questionNumber: "Question #:2",
     description: "What happens if the log file size limit is reached in custom logging?",
@@ -2573,7 +2573,7 @@ export const questions = {
 
 };
 
-export const emailQuestions = {
+export const questions = {
   "1": {
       "questionNumber": "Question #:1",
       "description": "An email marketer is writing the next send's subject line. What can the marketer do to make the subject line more effective? (Choose 2) ",
