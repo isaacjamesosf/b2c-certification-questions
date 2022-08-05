@@ -46,13 +46,6 @@ const Question = ({
             style={{ whiteSpace: "pre-wrap" }}
           />
         </ListItem>
-        {images[questionNumber] && (
-          <img
-            src={images[questionNumber].default}
-            alt={`question number ${questionNumber}`}
-            style={{ width: "100%", maxWidth: "1000px" }}
-          />
-        )}
       </Box>
       {Object.keys(question.options).map((option) => (
         <Option
