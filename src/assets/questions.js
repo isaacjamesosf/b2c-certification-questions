@@ -903,658 +903,658 @@ export const oldQuestions = {
 }
 
 // export const alissonQuestions = {
-export const questions = {
-    "1":{
-       "questionNumber":"Question #:1",
-       "description":"<p>Northern Trail Outfitters (NTO) sends hundreds of different email campaigns monthly.</p><p><span>What should be set up to help organize NTO's email tracking results?</span></p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>Create folders in My Tracking and select where to send results when sending an email</span></p>",
-          "B":"<p><span>Give emails unique names so they are easier to find in the tracking sends tab</span></p>",
-          "C":"<p><span>Remove old tracking results on a regular basis to declutter the results list</span></p>"
-       }
-    },
-    "2":{
-       "questionNumber":"Question #:2",
-       "description":"<p>Northern Trail Outfitters imports a daily feed of active customers into a data extension. A customer is only<span> </span>included in the daily feed if they meet the criteria to remain active.</p><p><span>&nbsp;</span></p><p><span>Which import option should be used to ensure the data extension only contains currently active customers?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Append</span></p>",
-          "B":"<p><span>Overwrite</span></p>",
-          "C":"<p><span>Add and Update</span></p>"
-       }
-    },
-    "3":{
-       "questionNumber":"Question #:3",
-       "description":"<p>A marketing specialist at Northern Trail Outfitters wants to automate sending the weekly newsletter to<span> </span>subscribers.<span> </span>The<span> </span>audience<span> </span>is<span> </span>located<span> </span>in<span> </span>one<span> </span>data<span> </span>extension,<span> </span>but<span> </span>they<span> </span>also want<span> </span>to<span> </span>send<span> </span>to<span> </span>a<span> </span>partner<span> </span>seed<span> </span>list.</p><p><span>&nbsp;</span></p><p><span>Which tool method should the specialist use?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Multi-Step Journey</span></p>",
-          "B":"<p><span>User Initiated Send</span></p>",
-          "C":"<p><span>Automation Studio Email Activity</span></p>"
-       }
-    },
-    "4":{
-       "questionNumber":"Question #:4",
-       "description":"<p>A marketer has built an automation using Automation Studio to send data from a data extension to the SFTP</p><p>as a .csv file. The automation includes a data extract and completes successfully, but the file is still not<span> </span>showing up on the SFTP.</p><p><span>&nbsp;</span></p><p><span>Which activity is missing?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Fire Event</span></p>",
-          "B":"<p><span>Import File</span></p>",
-          "C":"<p><span>File Transfer</span></p>"
-       }
-    },
-    "5":{
-       "questionNumber":"Question #:5",
-       "description":"<p>Every day, Northern Trail Outfitters (NTO) adds to a data extension with purchasers of a new luxury cooler<span> </span>line. To give these customers a high-end purchasing experience, NTO wants to send a customized<span> </span>'congratulations' email the day they are posted in the data extension, and follow up with a review request 14<span> </span>days later.</p><p><span>&nbsp;</span></p><p><span>Which automation solutions should be set up to accommodate this request?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Journey Builder and Behavioral Triggers</span></p>",
-          "B":"<p><span>Automation Studio and Path Optimizer</span></p>",
-          "C":"<p><span>Automation Studio and Journey Builder</span></p>"
-       }
-    },
-    "6":{
-       "questionNumber":"Question #:6",
-       "description":"<p>Northern Trail Outfitters (NTO) wants to send out three emails In Automation Studio. However, NTO wants</p><p>to ensure each email is fully sent before the next email begins sending. How should the automation workflow be built to accomplish this?</p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>Add each Send Email activity to different steps in an automation</span></p>",
-          "B":"<p><span>Include a Verification activity between each step of an automation</span></p>",
-          "C":"<p><span>Add each Send Email activity to a single step in an automation</span></p>"
-       }
-    },
-    "7":{
-       "questionNumber":"Question #:7",
-       "description":"<p>A marketer needs to personalize an email with dynamic content using data from the Open Data View and data<span> </span>from the Purchase Data Extension.</p><p><span>&nbsp;</span></p><p><span>What should be used to source the data from these different sources?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Attribute Group</span></p>",
-          "B":"<p><span>SQL Query Activity</span></p>",
-          "C":"<p><span>Data Filter</span></p>"
-       }
-    },
-    "8":{
-       "questionNumber":"Question #:8",
-       "description":"<p>Northern Trail Outfitters (NTO) currently uses AMPscript to create customized content for its subscribers.</p><p><span>Which actions should help build confidence in NTO's dynamic email capabilities?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Use a Guided Send to perform a test send to Internal users using subscriber data</span></p>",
-          "B":"<p><span>Use CloudPages to duplicate the dynamic code and test it by using manual subscriber inputs</span></p>",
-          "C":"<p><span>Use Preview and Test, select a targeted subscriber, and send the email to internal team members</span></p>"
-       }
-    },
-    "9":{
-       "questionNumber":"Question #:9",
-       "description":"<p>Northern Trail Outfitters (NTO) wants to manager subscriber preferences at the communication theme level.</p><p>NTO'S subscribers are stored in data extensions.</p><p><span>&nbsp;</span></p><p><span>Which Marketing Cloud feature should be used to achieve this?</span></p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>Publication Lists</span></p>",
-          "B":"<p><span>List Unsubscribes</span></p>",
-          "C":"<p><span>Journey Builder Sends</span></p>"
-       }
-    },
-    "10":{
-       "questionNumber":"Question #:10",
-       "description":"<p>Northern Trail Outfitters (NTO) has an upcoming campaign with a call to action to shop its new NTO outlet<span> </span>store. The campaign will need to send up to three emails but stop sending to each specific subscriber once they<span> </span>have made a purchase at the NTO outlet, and provide reporting on the success of the campaign.</p><p><span>&nbsp;</span></p><p><span>Which Journey Builder component addresses the two requirements of this campaign?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Decision Splits</span></p>",
-          "B":"<p><span>Goals</span></p>",
-          "C":"<p><span>Exits</span></p>"
-       }
-    },
-    "11":{
-       "questionNumber":"Question #:11",
-       "description":"<p>Northern Trail Outfitters (NTO) has expanded into 15 new countries and needs to send localized content. NTO<span> </span>works with an agency to provide the translations, but they lack email developer resources.</p><p><span>&nbsp;</span></p><p><span>What should NTO do to create and send localized content at scale?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Leverage templates with AMPscript</span></p>",
-          "B":"<p><span>Leverage Enhanced Dynamic Content</span></p>",
-          "C":"<p><span>Leverage Multilingual Content Blocks</span></p>"
-       }
-    },
-    "12":{
-       "questionNumber":"Question #:12",
-       "description":"<p>A marketer has created a primary data extension that contains all active subscribers with fields containing key<span> </span>demographics and subscriber attributes. Each week, there are up to 10 teams that send to segments of their<span> </span>subscriber base.</p><p><span>&nbsp;</span></p><p><span>What should they use to ensure they have fresh data for these sends?</span></p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>A nightly automation with a filter activity</span></p>",
-          "B":"<p><span>A verification step In the send automation</span></p>",
-          "C":"<p><span>An approval process for sending</span></p>"
-       }
-    },
-    "13":{
-       "questionNumber":"Question #:13",
-       "description":"<p>The data team at Northern Trail Outfitters wants to send a daily report of all subscribers emailed in the last 24<span> </span>hours to their Enhanced FTP Export folder. The file should contain unique email addresses.</p><p><span>&nbsp;</span></p><p><span>At a minimum, which activities should be configured in Automation Studio to meet their requirements?</span></p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>SQL Query, Data Extract, File Transfer</span></p>",
-          "B":"<p><span>SQL Query, Filter, Data Extract</span></p>",
-          "C":"<p><span>Filter, Data Extract, File Transfer</span></p>"
-       }
-    },
-    "14":{
-       "questionNumber":"Question #:14",
-       "description":"<p>Northern Trail Outfitters (NTO) wants to improve the accessibility of its email design.</p><p><span>Which best practice should NTO employ?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Reduce line spacing to fit more content on the screen and reduce scrolling</span></p>",
-          "B":"<p><span>Remove role=\"presentation\" from layout tables to support assistive technologies</span></p>",
-          "C":"<p><span>Increase the font size (over 16pt) to make the content easier to read</span></p>"
-       }
-    },
-    "15":{
-       "questionNumber":"Question #:15",
-       "description":"<p>Northern Trail Outfitters is looking at solutions that provide warnings/advice automatically about Email Sends<span> </span>using Artificial Intelligence.</p><p><span>&nbsp;</span></p><p><span>Which standard tool best does this?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Einstein Copy Insights</span></p>",
-          "B":"<p><span>Einstein Email Recommendations</span></p>",
-          "C":"<p><span>Einstein Messaging Insights</span></p>"
-       }
-    },
-    "16":{
-       "questionNumber":"Question #:16",
-       "description":"<p>Northern Trail Outfitters (NTO) is interested in exploring its large volume of send data. NTO wants to<span> </span>dynamically filter, sort, and group the data in one view but is not comfortable writing SQL queries.</p><p><span>&nbsp;</span></p><p><span>Which tool should NTO use?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Filter Activity in Automation Studio</span></p>",
-          "B":"<p><span>Email Performance Over Time Report</span></p>",
-          "C":"<p><span>Pivot table in Datorama Reports</span></p>"
-       }
-    },
-    "17":{
-       "questionNumber":"Question #:17",
-       "description":"<p>Northern Trail Outfitters uses an automation to process and report sales agents' weekly data extensions. All<span> </span>sales agents' data is needed for the automation's created report to be correct. Some agents have not been<span> </span>creating their data extensions in time.</p><p><span>&nbsp;</span></p><p><span>Which step prevents the automation from completing the automation instance and delivering an inaccurate report?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Data Extract Activity</span></p>",
-          "B":"<p><span>Verification Activity</span></p>",
-          "C":"<p><span>Wait Activity</span></p>"
-       }
-    },
-    "18":{
-       "questionNumber":"Question #:18",
-       "description":"<p>Northern Trail Outfitters (NTO) notices a larger than normal drop in engagement and a spike in unsubscribes<span> </span>after its sales team added a newsletter that is sent three times a week, in addition to the normal commercial<span> </span>marketing messages sent throughout the week.</p><p><span>&nbsp;</span></p><p><span>Which action should be taken to reduce the number of unsubscribes and increase engagement for NTO's program?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Add complementary SMS campaigns</span></p>",
-          "B":"<p><span>Create more focused segmented lists for messaging</span></p>",
-          "C":"<p><span>Focus on action-driven subject lines</span></p>"
-       }
-    },
-    "19":{
-       "questionNumber":"Question #:19",
-       "description":"<p>Northern Trail Outfitters wants to send a personalized email to its loyalty program members. The email should<span> </span>include details about loyalty members' profiles, point balance, and purchase behavior. This data exists in<span> </span>Marketing Cloud across several data extensions.</p><p><span>&nbsp;</span></p><p><span>What should a marketer use to build this level of personalization into the email?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Enhanced Dynamic Content Blocks</span></p>",
-          "B":"<p><span>AMPscript Search Functions</span></p>",
-          "C":"<p><span>Personalization Strings</span></p>"
-       }
-    },
-    "20":{
-       "questionNumber":"Question #:20",
-       "description":"<p>A global marketing team has created an email using Content Builder Approvals and shared it with multiple<span> </span>business units in their Enterprise. Even though the email was approved, additional changes are needed.</p><p><span>&nbsp;</span></p><p><span>What is the first action that should be taken to make the edits?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Unshare the email</span></p>",
-          "B":"<p><span>Withdraw email approval</span></p>",
-          "C":"<p><span>Cancel send using email</span></p>"
-       }
-    },
-    "21":{
-       "questionNumber":"Question #:21",
-       "description":"<p>An upcoming campaign at Northern Trail Outfitters (NTO) has an audience list larger than the company's daily sends. NTO's marketing team is concerned about this send affecting deliverability.</p><p>&nbsp;</p><p>Which feature should help NTO achieve this send while keeping deliverability metrics in mind?</p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Einstein Engagement Frequency</span></p>",
-          "B":"<p><span>Send Throttling</span></p>",
-          "C":"<p><span>Sender Authentication Package</span></p>"
-       }
-    },
-    "22":{
-       "questionNumber":"Question #:22",
-       "description":"<p>Leadership at Northern Trail Outfitters wants to see a dashboard showing the success rate of customers that<span> </span>have been through a Welcome Series Journey in the last 7 days.</p><p><span>&nbsp;</span></p><p><span>Where should they find this dashboard?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Journey Builder - Journey History</span></p>",
-          "B":"<p><span>Datorama Reports - Journey Performance</span></p>",
-          "C":"<p><span>Reports - Journey Engagement</span></p>"
-       }
-    },
-    "23":{
-       "questionNumber":"Question #:23",
-       "description":"<p>A customer uses the Salesforce Contact object as a synchronized data source. They have started to sync<span> </span>custom fields for further segmentation.</p><p><span>&nbsp;</span></p><p><span>Which first step should the customer take to ensure the new fields are available to segment on?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Edit the fields in the synchronized data source</span></p>",
-          "B":"<p><span>Create a new data extension with the new fields</span></p>",
-          "C":"<p><span>Create a data filter that includes the new fields</span></p>"
-       }
-    },
-    "24":{
-       "questionNumber":"Question #:24",
-       "description":"<p>A marketer is asked to create a sendable data extension from various tables including orders, subscribers, and<span> </span>product line items. The resulting data extension will be used as an entry source for a journey.</p><p><span>&nbsp;</span></p><p><span>Which tool should help create this table?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Automation Studio</span></p>",
-          "B":"<p><span>Data Designer</span></p>",
-          "C":"<p><span>Audience Studio</span></p>"
-       }
-    },
-    "25":{
-       "questionNumber":"Question #:25",
-       "description":"<p>Northern Trail Outfitters imports an encrypted file of its subscribers' favorite colors.</p><p><span>&nbsp;</span></p><p><span>Which automation activity and configuration setting should be used for import to a data extension?</span></p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>Manage Files in File Transfer</span></p>",
-          "B":"<p><span>Configure Field-Level Encryption in import file</span></p>",
-          "C":"<p><span>Specify character encoding in import file</span></p>"
-       }
-    },
-    "26":{
-       "questionNumber":"Question #:26",
-       "description":"<p>Northern Trail Outfitters wants to report on subscribers who did not receive emails that were included in the<span> </span>sending audience.</p><p><span>&nbsp;</span></p><p><span>Which tool should provide a list of subscribers who didn't receive the expected emails?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>_sent Dataview</span></p>",
-          "B":"<p><span>'Subscribers Not Sent To* report</span></p>",
-          "C":"<p><span>Not Sent Tracking Extract</span></p>"
-       }
-    },
-    "27":{
-       "questionNumber":"Question #:27",
-       "description":"<p>When building an email audience, a marketer first runs a query to update a data extension referenced in the<span> </span>audience query.</p><p><span>&nbsp;</span></p><p><span>Which configuration should be used to ensure the exclusion is updated before the audience query runs?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>In the step with the two SQL activities, place a wait step between them</span></p>",
-          "B":"<p><span>Place the audience SQL Query Activity in a step after the exclusion SQL Query Activity</span></p>",
-          "C":"<p><span>Place the audience SQL Query Activity below the exclusion SQL Query Activity</span></p>"
-       }
-    },
-    "28":{
-       "questionNumber":"Question #:28",
-       "description":"<p>After sending an initial 'welcome' email, Northern Trail Outfitters needs to configure Journey Builder to<span> </span>continue a customer acquisition journey after a purchase is made on its website.</p><p><span>&nbsp;</span></p><p><span>Which type of activity should be used?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Engagement Split</span></p>",
-          "B":"<p><span>Behavioral Trigger</span></p>",
-          "C":"<p><span>Wait Until Event</span></p>"
-       }
-    },
-    "29":{
-       "questionNumber":"Question #:29",
-       "description":"<p>The<span> </span>marketing<span> </span>team<span> </span>at<span> </span>Northern<span> </span>Trail<span> </span>Outfitters<span> </span>is<span> </span>concerned<span> </span>about<span> </span>its<span> </span>email<span> </span>deliverability<span> </span>rates<span> </span>over<span> </span>the<span> </span>last<span> </span>three months.</p><p><span>&nbsp;</span></p><p><span>Which remediation tactic should be used to improve deliverability?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Increase the frequency of email sending to boost engagement</span></p>",
-          "B":"<p><span>Broaden segmentation criteria to reach more diverse audiences</span></p>",
-          "C":"<p><span>Scale back sending for specific ISPs until the issue subsides</span></p>"
-       }
-    },
-    "30":{
-       "questionNumber":"Question #:30",
-       "description":"<p>Northern Trail Outfitters (NTO) is using Datorama Reports for Marketing Cloud to report on email and<span> </span>journey performance.</p><p><span>&nbsp;</span></p><p>Which preconfigured dashboard should NTO review to get an idea of which journeys are performing the best?</p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Email and Journey Overview Dashboard</span></p>",
-          "B":"<p><span>Email Performance Dashboard</span></p>",
-          "C":"<p><span>Journey Performance by Email Dashboard</span></p>"
-       }
-    },
-    "31":{
-       "questionNumber":"Question #:31",
-       "description":"<p><span>A marketer has built a journey that they want to run multiple times a day after new data is compiled. The data is NOT in an attribute group in Contact Builder.</span></p><p></p><p>What should the marketer do in order to accomplish this?</p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>Select the Recurring schedule type for the entry source in Journey Builder</span></p>",
-          "B":"<p><span>Schedule and activate Triggered Sends for the messages in the journey</span></p>",
-          "C":"<p><span>Select an automation to populate the Entry Source Data Extension</span></p>"
-       }
-    },
-    "32":{
-       "questionNumber":"Question #:32",
-       "description":"<p>Northern Trail Outfitters (NTO) stores sales representative information in a data extension. NTO wants to<span> </span>personalize the From Name in emails with the targeted customer's specific representative.</p><p><span>&nbsp;</span></p><p><span>Which functionalities accomplish the requested configuration?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Delivery Profile and AMPscript Lookup</span></p>",
-          "B":"<p><span>Send Classification and Subscriber Attributes</span></p>",
-          "C":"<p><span>Sender Profile and AMPscript Lookup</span></p>"
-       }
-    },
-    "33":{
-       "questionNumber":"Question #:33",
-       "description":"<p>A marketer is testing an email that includes an Interactive Email Form and discovers the form is missing when<span> </span>the email is opened in Gmail.</p><p><span>&nbsp;</span></p><p><span>What guidance should be given to the email developer to ensure the interactive form displays correctly?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Ensure the 'Optimize for Gmail' checkbox is selected</span></p>",
-          "B":"<p><span>Ensure characters in the CSS tags are limited to 16kB</span></p>",
-          "C":"<p><span>Ensure fallback content has been configured for Gmail</span></p>"
-       }
-    },
-    "34":{
-       "questionNumber":"Question #:34",
-       "description":"<p>A marketer has noticed an increase in unsubscribes. They would like to address this concern but, going into a<span> </span>holiday season, want to avoid eliminating planned emails.</p><p><span>&nbsp;</span></p><p><span>What should they use to easily focus their marketing efforts on subscribers who are least likely to unsubscribe?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Path Optimizer</span></p>",
-          "B":"<p><span>Scoring Split</span></p>",
-          "C":"<p><span>Frequency Split</span></p>"
-       }
-    },
-    "35":{
-       "questionNumber":"Question #:35",
-       "description":"<p><span>Northern Trail Outfitters (NTO) wants to add automation to its email marketing. Which automation should NTO create as a good first step?</span></p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>An automation that deletes old data extensions, emails, and reports</span></p>",
-          "B":"<p><span>An automation that contains several recurring emails and decisioning points</span></p>",
-          "C":"<p><span>An automation that Imports subscriber data regularly and updates key data extensions</span></p>"
-       }
-    },
-    "36":{
-       "questionNumber":"Question #:36",
-       "description":"<p>Northern Trail Outfitters (NTO) is building a welcome journey for new customers with dynamic content in<span> </span>each email. NTO would like to have content personalized for each customer and include assets based on<span> </span>real-time analysis of what is performing the best for other customers.</p><p><span>&nbsp;</span></p><p><span>Which feature should NTO use?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Einstein Copy Insights</span></p>",
-          "B":"<p><span>Einstein Content Selection</span></p>",
-          "C":"<p><span>Enhanced Dynamic Content</span></p>"
-       }
-    },
-    "37":{
-       "questionNumber":"Question #:37",
-       "description":"<p><span>A marketer needs to send emails to the creative team for proofing as part of an email campaign. </span></p><p><span>Which feature should help achieve this as an automatic flow?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Subscriber Preview</span></p>",
-          "B":"<p><span>Approval Workflow</span></p>",
-          "C":"<p><span>Content Builder Approvals</span></p>"
-       }
-    },
-    "38":{
-       "questionNumber":"Question #:38",
-       "description":"<p>Northern Trail Outfitters (NTO) has subscribers opt-in to its marketing program via email or SMS.</p><p><span>&nbsp;</span></p><p><span>What should NTO configure for its welcome series in Journey Builder to honor the opt-in communication method?</span></p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>Send both email and SMS to ensure subscribers get NTO's messages</span></p>",
-          "B":"<p><span>Create one Entry Source for each messaging channel</span></p>",
-          "C":"<p><span>Ensure source channel Is available in subscriber data</span></p>"
-       }
-    },
-    "39":{
-       "questionNumber":"Question #:39",
-       "description":"<p>Northern Trail Outfitters (NTO) sends 500,000 emails per month and shares its sending domain and IP with<span> </span>other customers.</p><p><span>&nbsp;</span></p><p><span>Which action ensures NTO's sending reputation remains intact?</span></p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>Implement an SAP with Private Domain and a Dedicated IP</span></p>",
-          "B":"<p><span>Request three Dedicated IPs to spread out the sending volume</span></p>",
-          "C":"<p><span>Request a Private Domain to leverage SPF and DKIM authentication</span></p>"
-       }
-    },
-    "40":{
-       "questionNumber":"Question #:40",
-       "description":"<p>A marketing team uses email templates as a means to create a consistent style guide. The team has recently<span> </span>updated the primary template to coincide with company-wide rebranding; however, content approvers are<span> </span>reporting they are not seeing the new changes reflected.</p><p><span>&nbsp;</span></p><p><span>Which step needs to be completed?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>The email must be recreated using the updated template</span></p>",
-          "B":"<p><span>'Update Email Now' needs to be applied to each email</span></p>",
-          "C":"<p><span>The template must be approved before updates are reflected</span></p>"
-       }
-    },
-    "41":{
-       "questionNumber":"Question #:41",
-       "description":"<p>Northern Trail Outfitters (NTO) has noticed a decrease in open rate across all email campaigns. NTO is<span> </span>concerned its sender reputation may have been negatively impacted by a recent import of subscribers.</p><p><span>&nbsp;</span></p><p><span>Which metric should be analyzed as a possible indicator of bad sender reputation?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Send volume</span></p>",
-          "B":"<p><span>Click rate</span></p>",
-          "C":"<p><span>Block bounces</span></p>"
-       }
-    },
-    "42":{
-       "questionNumber":"Question #:42",
-       "description":"<p>Northern Trail Outfitters needs to send a transactional email to all customers who purchased an item that was<span> </span>recently recalled. The email must be sent to each applicable customer even if they have unsubscribed.</p><p><span>&nbsp;</span></p><p><span>Which component should be configured to provide this functionality?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Delivery Profile</span></p>",
-          "B":"<p><span>Send Classification</span></p>",
-          "C":"<p><span>Sender Profile</span></p>"
-       }
-    },
-    "43":{
-       "questionNumber":"Question #:43",
-       "description":"<p><span>Northern Trail Outfitters wants to ensure that the Email Address field value is not duplicated in a data extension. What should a marketer do to ensure the Email Address field values are unique?</span></p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>Mark the field as the Primary Key</span></p>",
-          "B":"<p><span>Mark the data extension as Sendable</span></p>",
-          "C":"<p><span>Use Email Address as Subscriber Key</span></p>"
-       }
-    },
-    "44":{
-       "questionNumber":"Question #:44",
-       "description":"<p>Northern Trail Outfitters (NTO) is having an issue with bad email addresses coming into its website email<span> </span>signup form, impacting deliverability and sender reputation.</p><p><span>&nbsp;</span></p><p><span>What should NTO use to make sure email addresses are valid before adding to its audience?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Leverage a Smart Capture block</span></p>",
-          "B":"<p><span>A double opt-in at signup</span></p>",
-          "C":"<p><span>Add CAPTCHA validation to the form</span></p>"
-       }
-    },
-    "45":{
-       "questionNumber":"Question #:45",
-       "description":"<p>A marketer typically sends to a filtered data extension that contains their primary audience. They need to target only a portion of this population for an upcoming send.</p><p></p><p>What should they do to further segment their audience?</p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Copy the filtered data extension and add additional filter criteria</span></p>",
-          "B":"<p><span>Use the Split option to temporarily add additional filter criteria</span></p>",
-          "C":"<p><span>Copy the data filter and build a new data extension with additional filter criteria</span></p>"
-       }
-    },
-    "46":{
-       "questionNumber":"Question #:46",
-       "description":"<p>A marketing manager wants to see how the cross-channel customer population has changed over the last 6<span> </span>months.</p><p><span>&nbsp;</span></p><p><span>Which report should be run to provide this Information?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Contacts Count</span></p>",
-          "B":"<p><span>Contacts Analytics</span></p>",
-          "C":"<p><span>Audience Engagement Over Time</span></p>"
-       }
-    },
-    "47":{
-       "questionNumber":"Question #:47",
-       "description":"<p>The customer success team at Northern Trail Outfitters wants to build out a profile for its subscribers to<span> </span>improve segmentation for future sends.</p><p><span>&nbsp;</span></p><p><span>Which content block should the team use to capture this information directly from the inbox for some subscribers?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Smart capture block</span></p>",
-          "B":"<p><span>Interactive Email Form block</span></p>",
-          "C":"<p><span>Einstein content block</span></p>"
-       }
-    },
-    "48":{
-       "questionNumber":"Question #:48",
-       "description":"<p>A marketer wants to use a filter to create a data extension that includes only records from yesterday.</p><p><span>Which step should they take to ensure the data extension includes newly added records?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Check the 'AUTOMATICALLY REFRESH UPON SENDING' checkbox</span></p>",
-          "B":"<p><span>Configure the filter DE to auto-refresh dally in properties</span></p>",
-          "C":"<p><span>Schedule an automation to refresh the filter activity each day</span></p>"
-       }
-    },
-    "49":{
-       "questionNumber":"Question #:49",
-       "description":"<p>The marketing team has been troubleshooting why an email was not sent to 10% of the audience within the<span> </span>data extension. When they review the tracking for the job ID, they see 0 subscribers were held or<span> </span>unsubscribed.</p><p><span>&nbsp;</span></p><p><span>Which additional issues should they consider?</span></p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>DoNotTrack preferences</span></p>",
-          "B":"<p><span>Bounced contacts from previous sends</span></p>",
-          "C":"<p><span>Suppressed contacts from contact deletion</span></p>"
-       }
-    },
-    "50":{
-       "questionNumber":"Question #:50",
-       "description":"<p>A marketing team wants to schedule automatic delivery of pivot table data to an Amazon Web Services<span> </span>(AWS) S3 bucket every Monday at 6:00 a.m.</p><p><span>&nbsp;</span></p><p><span>Which method meets their needs?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Report Scheduling In Datorama Reports</span></p>",
-          "B":"<p><span>File Transfer Activity in Automation Studio</span></p>",
-          "C":"<p><span>Report Definition Activity In Automation Studio</span></p>"
-       }
-    },
-    "51":{
-       "questionNumber":"Question #:51",
-       "description":"<p>The marketer for Northern Trail Outfitters wants to review the tone of subject lines and the effect on<span> </span>engagement for recent sends.</p><p><span>&nbsp;</span></p><p><span>Which tool should supply insights into the tone of subject lines?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Einstein Recommendations</span></p>",
-          "B":"<p><span>Einstein Messaging Insights</span></p>",
-          "C":"<p><span>Einstein Copy Insights</span></p>"
-       }
-    },
-    "52":{
-       "questionNumber":"Question #:52",
-       "description":"<p>A marketer wants to quickly view the link performance for a specific email, including Total Clicks and Unique<span> </span>Clicks.</p><p><span>&nbsp;</span></p><p><span>Which area of the application should provide this data?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Send Performance Tab</span></p>",
-          "B":"<p><span>Email Overlay View</span></p>",
-          "C":"<p><span>Tracking Conversions Tab</span></p>"
-       }
-    },
-    "53":{
-       "questionNumber":"Question #:53",
-       "description":"<p>Northern Trail Outfitters (NTO) has multiple lines of businesses sharing one business unit. NTO wants to<span> </span>ensure its customers can identify their specific line of business when receiving an email.</p><p><span>&nbsp;</span></p><p><span>Which setting should be configured in a send to identify the line of business sending the message?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Sender Authentication Package</span></p>",
-          "B":"<p><span>Brand Builder</span></p>",
-          "C":"<p><span>Sender Profile</span></p>"
-       }
-    },
-    "54":{
-       "questionNumber":"Question #:54",
-       "description":"<p>Northern Trail Outfitters wants to organize its assets so images can be easily searched by tags in Content<span> </span>Builder. However, most images have multiple tags that could be applied, which makes it more difficult to filter<span> </span>to a manageable number of results.</p><p><span>&nbsp;</span></p><p><span>How should the number of tags selected for an asset be minimized while still providing the necessary granularity?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Make the Customer Key more descriptive</span></p>",
-          "B":"<p><span>Leverage Einstein for content tagging</span></p>",
-          "C":"<p><span>Use nested tags to create hierarchies</span></p>"
-       }
-    },
-    "55":{
-       "questionNumber":"Question #:55",
-       "description":"<p>A marketer with Northern Trail Outfitters needs to review how different variations of an email will render in<span> </span>different email clients.</p><p><span>&nbsp;</span></p><p><span>Which tool should the marketer use?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Content Detective</span></p>",
-          "B":"<p><span>Test Send</span></p>",
-          "C":"<p><span>Send Preview</span></p>"
-       }
-    },
-    "56":{
-       "questionNumber":"Question #:56",
-       "description":"<p><span>A marketer wants to better organize their assets in Marketing Cloud. What should they do to improve searching and filtering in Content Builder?</span></p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>Add assets to folders upon creation</span></p>",
-          "B":"<p><span>Add descriptive tags to each asset upon creation</span></p>",
-          "C":"<p><span>Add a description to each asset upon creation</span></p>"
-       }
-    },
-    "57":{
-       "questionNumber":"Question #:57",
-       "description":"<p>Northern Trail Outfitters (NTO) is troubleshooting why a triggered send isn't being delivered to the customer.<span> </span>When querying the _subscribers data view, NTO notices this subscriber key exists twice, and one of them has<span> </span>a status of 'Held'.</p><p><span>&nbsp;</span></p><p><span>What is the source of the duplicate subscriber key?</span></p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>Triggered Send Managed Lists</span></p>",
-          "B":"<p><span>Global Unsubscribe List</span></p>",
-          "C":"<p><span>Auto Suppression List</span></p>"
-       }
-    },
-    "58":{
-       "questionNumber":"Question #:58",
-       "description":"<p>Northern Trail Outfitters (NTO) wants to include specific content for its most engaged customers and different<span> </span>content for its least engaged customers.</p><p><span>&nbsp;</span></p><p><span>Which Journey Builder activity should NTO use?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>Engagement Split</span></p>",
-          "B":"<p><span>Frequency Split</span></p>",
-          "C":"<p><span>Scoring Split</span></p>"
-       }
-    },
-    "59":{
-       "questionNumber":"Question #:59",
-       "description":"<p>A marketer wants to store all the attributes for a triggered send within a data extension.</p><p><span>Which configuration is required when creating the data extension?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Select the 'Use for triggeredsend' checkbox</span></p>",
-          "B":"<p><span>Include Subscriberkey and Emailaddress field as primary key</span></p>",
-          "C":"<p><span>Create from template and choose triggeredsend template</span></p>"
-       }
-    },
-    "60":{
-       "questionNumber":"Question #:60",
-       "description":"<p>A marketer for Northern Trail Outfitters needs to see test emails for each subscriber in a data extension.</p><p><span>What should the marketer do to ensure the data extension appears as a Recipient Test Data Extension in the Test Send menu?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Save the data extension in the Test Folder</span></p>",
-          "B":"<p><span>Create the data extension as 'Is Testable'</span></p>",
-          "C":"<p><span>Associate the data extension to the Campaign</span></p>"
-       }
-    },
-    "61":{
-       "questionNumber":"Question #:61",
-       "description":"<p>Northern Trail Outfitters (NTO) receives a complaint from a long-time customer who claims that, despite<span> </span>providing an updated email address, they are still receiving emails at an old address. NTO confirms that the<span> </span>customer's new email address is stored in the target data extension.</p><p><span>&nbsp;</span></p><p><span>What is preventing the customer from receiving emails at their new address?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>The new email address is from an unsupported domain</span></p>",
-          "B":"<p><span>The email address has not been updated in All Subscribers</span></p>",
-          "C":"<p><span>The customer has not opted In again with the new address</span></p>"
-       }
-    },
-    "62":{
-       "questionNumber":"Question #:62",
-       "description":"<p>An insurance company has launched a new campaign to target Individuals between 64 and 65 that are not yet<span> </span>enrolled and are opted into email. All subscriber data is stored in one data extension.</p><p><span>&nbsp;</span></p><p><span>How should the marketer use low-code to create this segment?</span></p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>Create a data filter on the data extension</span></p>",
-          "B":"<p><span>Filter the .csv file before import</span></p>",
-          "C":"<p><span>Write a query to create a filtered data extension</span></p>"
-       }
-    },
-    "63":{
-       "questionNumber":"Question #:63",
-       "description":"<p><span>Northern Trail Outfitters (NTO) wants to test Einstein Recommendations against the company's static product recommendations in a product return confirmation email. Next, NTO needs to evaluate the results and choose the winning option for future confirmations.</span></p><p></p><p><span>Which journey type is best suited to run this test?</span></p>",
-       "answer":"B",
-       "options":{
-          "A":"<p><span>Single Send</span></p>",
-          "B":"<p><span>Multi-Step</span></p>",
-          "C":"<p><span>Transactional Send</span></p>"
-       }
-    },
-    "64":{
-       "questionNumber":"Question #:64",
-       "description":"<p>A healthcare company imports its patient portal registrations at the parent level business unit (BU). The<span> </span>marketing team would like to ensure individual office locations have access to this data without giving access<span> </span>to the parent level BU.</p><p><span>&nbsp;</span></p><p><span>What should the marketing team do in Automation Studio to ensure data is available at the child BU level?</span></p>",
-       "answer":"C",
-       "options":{
-          "A":"<p><span>After the file import, use the transfer file activity to move data into data extensions in child BUS</span></p>",
-          "B":"<p><span>Create automations that import the data directly into the child BUs to bypass the parent level BU</span></p>",
-          "C":"<p><span>After the file import, use the filter activity to populate shared data extensions that are available to child BUs</span></p>"
-       }
-    },
-    "65":{
-       "questionNumber":"Question #:65",
-       "description":"<p>Northern Trail Outfitters (NTO) wants to leverage Path Optimizer to test new marketing content. The best path<span> </span>will be selected based on the orders placed on NTO's website.</p><p><span>&nbsp;</span></p><p><span>What should NTO configure in Path Optimizer?</span></p>",
-       "answer":"A",
-       "options":{
-          "A":"<p><span>Email Engagement</span></p>",
-          "B":"<p><span>Manual Engagement</span></p>",
-          "C":"<p><span>Web Conversion</span></p>"
-       }
-    }
- }
+   export const questions = {
+      "1":{
+         "questionNumber":"Question #:1",
+         "description":"<p>Northern Trail Outfitters (NTO) sends hundreds of different email campaigns monthly.</p>What should be set up to help organize NTO's email tracking results?",
+         "answer":"A",
+         "options":{
+            "A":"Create folders in My Tracking and select where to send results when sending an email",
+            "B":"Give emails unique names so they are easier to find in the tracking sends tab",
+            "C":"Remove old tracking results on a regular basis to declutter the results list"
+         }
+      },
+      "2":{
+         "questionNumber":"Question #:2",
+         "description":"<p>Northern Trail Outfitters imports a daily feed of active customers into a data extension. A customer is only<span> </span>included in the daily feed if they meet the criteria to remain active.</p>&nbsp;Which import option should be used to ensure the data extension only contains currently active customers?",
+         "answer":"B",
+         "options":{
+            "A":"Append",
+            "B":"Overwrite",
+            "C":"Add and Update"
+         }
+      },
+      "3":{
+         "questionNumber":"Question #:3",
+         "description":"<p>A marketing specialist at Northern Trail Outfitters wants to automate sending the weekly newsletter to<span> </span>subscribers.<span> </span>The<span> </span>audience<span> </span>is<span> </span>located<span> </span>in<span> </span>one<span> </span>data<span> </span>extension,<span> </span>but<span> </span>they<span> </span>also want<span> </span>to<span> </span>send<span> </span>to<span> </span>a<span> </span>partner<span> </span>seed<span> </span>list.</p>&nbsp;Which tool method should the specialist use?",
+         "answer":"B",
+         "options":{
+            "A":"Multi-Step Journey",
+            "B":"User Initiated Send",
+            "C":"Automation Studio Email Activity"
+         }
+      },
+      "4":{
+         "questionNumber":"Question #:4",
+         "description":"<p>A marketer has built an automation using Automation Studio to send data from a data extension to the SFTP</p><p>as a .csv file. The automation includes a data extract and completes successfully, but the file is still not<span> </span>showing up on the SFTP.</p>&nbsp;Which activity is missing?",
+         "answer":"C",
+         "options":{
+            "A":"Fire Event",
+            "B":"Import File",
+            "C":"File Transfer"
+         }
+      },
+      "5":{
+         "questionNumber":"Question #:5",
+         "description":"<p>Every day, Northern Trail Outfitters (NTO) adds to a data extension with purchasers of a new luxury cooler<span> </span>line. To give these customers a high-end purchasing experience, NTO wants to send a customized<span> </span>'congratulations' email the day they are posted in the data extension, and follow up with a review request 14<span> </span>days later.</p>&nbsp;Which automation solutions should be set up to accommodate this request?",
+         "answer":"C",
+         "options":{
+            "A":"Journey Builder and Behavioral Triggers",
+            "B":"Automation Studio and Path Optimizer",
+            "C":"Automation Studio and Journey Builder"
+         }
+      },
+      "6":{
+         "questionNumber":"Question #:6",
+         "description":"<p>Northern Trail Outfitters (NTO) wants to send out three emails In Automation Studio. However, NTO wants</p><p>to ensure each email is fully sent before the next email begins sending. How should the automation workflow be built to accomplish this?</p>",
+         "answer":"A",
+         "options":{
+            "A":"Add each Send Email activity to different steps in an automation",
+            "B":"Include a Verification activity between each step of an automation",
+            "C":"Add each Send Email activity to a single step in an automation"
+         }
+      },
+      "7":{
+         "questionNumber":"Question #:7",
+         "description":"<p>A marketer needs to personalize an email with dynamic content using data from the Open Data View and data<span> </span>from the Purchase Data Extension.</p>&nbsp;What should be used to source the data from these different sources?",
+         "answer":"B",
+         "options":{
+            "A":"Attribute Group",
+            "B":"SQL Query Activity",
+            "C":"Data Filter"
+         }
+      },
+      "8":{
+         "questionNumber":"Question #:8",
+         "description":"<p>Northern Trail Outfitters (NTO) currently uses AMPscript to create customized content for its subscribers.</p>Which actions should help build confidence in NTO's dynamic email capabilities?",
+         "answer":"C",
+         "options":{
+            "A":"Use a Guided Send to perform a test send to Internal users using subscriber data",
+            "B":"Use CloudPages to duplicate the dynamic code and test it by using manual subscriber inputs",
+            "C":"Use Preview and Test, select a targeted subscriber, and send the email to internal team members"
+         }
+      },
+      "9":{
+         "questionNumber":"Question #:9",
+         "description":"<p>Northern Trail Outfitters (NTO) wants to manager subscriber preferences at the communication theme level.</p><p>NTO'S subscribers are stored in data extensions.</p>&nbsp;Which Marketing Cloud feature should be used to achieve this?",
+         "answer":"A",
+         "options":{
+            "A":"Publication Lists",
+            "B":"List Unsubscribes",
+            "C":"Journey Builder Sends"
+         }
+      },
+      "10":{
+         "questionNumber":"Question #:10",
+         "description":"<p>Northern Trail Outfitters (NTO) has an upcoming campaign with a call to action to shop its new NTO outlet<span> </span>store. The campaign will need to send up to three emails but stop sending to each specific subscriber once they<span> </span>have made a purchase at the NTO outlet, and provide reporting on the success of the campaign.</p>&nbsp;Which Journey Builder component addresses the two requirements of this campaign?",
+         "answer":"C",
+         "options":{
+            "A":"Decision Splits",
+            "B":"Goals",
+            "C":"Exits"
+         }
+      },
+      "11":{
+         "questionNumber":"Question #:11",
+         "description":"<p>Northern Trail Outfitters (NTO) has expanded into 15 new countries and needs to send localized content. NTO<span> </span>works with an agency to provide the translations, but they lack email developer resources.</p>&nbsp;What should NTO do to create and send localized content at scale?",
+         "answer":"B",
+         "options":{
+            "A":"Leverage templates with AMPscript",
+            "B":"Leverage Enhanced Dynamic Content",
+            "C":"Leverage Multilingual Content Blocks"
+         }
+      },
+      "12":{
+         "questionNumber":"Question #:12",
+         "description":"<p>A marketer has created a primary data extension that contains all active subscribers with fields containing key<span> </span>demographics and subscriber attributes. Each week, there are up to 10 teams that send to segments of their<span> </span>subscriber base.</p>&nbsp;What should they use to ensure they have fresh data for these sends?",
+         "answer":"A",
+         "options":{
+            "A":"A nightly automation with a filter activity",
+            "B":"A verification step In the send automation",
+            "C":"An approval process for sending"
+         }
+      },
+      "13":{
+         "questionNumber":"Question #:13",
+         "description":"<p>The data team at Northern Trail Outfitters wants to send a daily report of all subscribers emailed in the last 24<span> </span>hours to their Enhanced FTP Export folder. The file should contain unique email addresses.</p>&nbsp;At a minimum, which activities should be configured in Automation Studio to meet their requirements?",
+         "answer":"A",
+         "options":{
+            "A":"SQL Query, Data Extract, File Transfer",
+            "B":"SQL Query, Filter, Data Extract",
+            "C":"Filter, Data Extract, File Transfer"
+         }
+      },
+      "14":{
+         "questionNumber":"Question #:14",
+         "description":"<p>Northern Trail Outfitters (NTO) wants to improve the accessibility of its email design.</p>Which best practice should NTO employ?",
+         "answer":"B",
+         "options":{
+            "A":"Reduce line spacing to fit more content on the screen and reduce scrolling",
+            "B":"Remove role=\"presentation\" from layout tables to support assistive technologies",
+            "C":"Increase the font size (over 16pt) to make the content easier to read"
+         }
+      },
+      "15":{
+         "questionNumber":"Question #:15",
+         "description":"<p>Northern Trail Outfitters is looking at solutions that provide warnings/advice automatically about Email Sends<span> </span>using Artificial Intelligence.</p>&nbsp;Which standard tool best does this?",
+         "answer":"C",
+         "options":{
+            "A":"Einstein Copy Insights",
+            "B":"Einstein Email Recommendations",
+            "C":"Einstein Messaging Insights"
+         }
+      },
+      "16":{
+         "questionNumber":"Question #:16",
+         "description":"<p>Northern Trail Outfitters (NTO) is interested in exploring its large volume of send data. NTO wants to<span> </span>dynamically filter, sort, and group the data in one view but is not comfortable writing SQL queries.</p>&nbsp;Which tool should NTO use?",
+         "answer":"C",
+         "options":{
+            "A":"Filter Activity in Automation Studio",
+            "B":"Email Performance Over Time Report",
+            "C":"Pivot table in Datorama Reports"
+         }
+      },
+      "17":{
+         "questionNumber":"Question #:17",
+         "description":"<p>Northern Trail Outfitters uses an automation to process and report sales agents' weekly data extensions. All<span> </span>sales agents' data is needed for the automation's created report to be correct. Some agents have not been<span> </span>creating their data extensions in time.</p>&nbsp;Which step prevents the automation from completing the automation instance and delivering an inaccurate report?",
+         "answer":"B",
+         "options":{
+            "A":"Data Extract Activity",
+            "B":"Verification Activity",
+            "C":"Wait Activity"
+         }
+      },
+      "18":{
+         "questionNumber":"Question #:18",
+         "description":"<p>Northern Trail Outfitters (NTO) notices a larger than normal drop in engagement and a spike in unsubscribes<span> </span>after its sales team added a newsletter that is sent three times a week, in addition to the normal commercial<span> </span>marketing messages sent throughout the week.</p>&nbsp;Which action should be taken to reduce the number of unsubscribes and increase engagement for NTO's program?",
+         "answer":"C",
+         "options":{
+            "A":"Add complementary SMS campaigns",
+            "B":"Create more focused segmented lists for messaging",
+            "C":"Focus on action-driven subject lines"
+         }
+      },
+      "19":{
+         "questionNumber":"Question #:19",
+         "description":"<p>Northern Trail Outfitters wants to send a personalized email to its loyalty program members. The email should<span> </span>include details about loyalty members' profiles, point balance, and purchase behavior. This data exists in<span> </span>Marketing Cloud across several data extensions.</p>&nbsp;What should a marketer use to build this level of personalization into the email?",
+         "answer":"C",
+         "options":{
+            "A":"Enhanced Dynamic Content Blocks",
+            "B":"AMPscript Search Functions",
+            "C":"Personalization Strings"
+         }
+      },
+      "20":{
+         "questionNumber":"Question #:20",
+         "description":"<p>A global marketing team has created an email using Content Builder Approvals and shared it with multiple<span> </span>business units in their Enterprise. Even though the email was approved, additional changes are needed.</p>&nbsp;What is the first action that should be taken to make the edits?",
+         "answer":"B",
+         "options":{
+            "A":"Unshare the email",
+            "B":"Withdraw email approval",
+            "C":"Cancel send using email"
+         }
+      },
+      "21":{
+         "questionNumber":"Question #:21",
+         "description":"<p>An upcoming campaign at Northern Trail Outfitters (NTO) has an audience list larger than the company's daily sends. NTO's marketing team is concerned about this send affecting deliverability.</p><p>&nbsp;</p><p>Which feature should help NTO achieve this send while keeping deliverability metrics in mind?</p>",
+         "answer":"B",
+         "options":{
+            "A":"Einstein Engagement Frequency",
+            "B":"Send Throttling",
+            "C":"Sender Authentication Package"
+         }
+      },
+      "22":{
+         "questionNumber":"Question #:22",
+         "description":"<p>Leadership at Northern Trail Outfitters wants to see a dashboard showing the success rate of customers that<span> </span>have been through a Welcome Series Journey in the last 7 days.</p>&nbsp;Where should they find this dashboard?",
+         "answer":"B",
+         "options":{
+            "A":"Journey Builder - Journey History",
+            "B":"Datorama Reports - Journey Performance",
+            "C":"Reports - Journey Engagement"
+         }
+      },
+      "23":{
+         "questionNumber":"Question #:23",
+         "description":"<p>A customer uses the Salesforce Contact object as a synchronized data source. They have started to sync<span> </span>custom fields for further segmentation.</p>&nbsp;Which first step should the customer take to ensure the new fields are available to segment on?",
+         "answer":"B",
+         "options":{
+            "A":"Edit the fields in the synchronized data source",
+            "B":"Create a new data extension with the new fields",
+            "C":"Create a data filter that includes the new fields"
+         }
+      },
+      "24":{
+         "questionNumber":"Question #:24",
+         "description":"<p>A marketer is asked to create a sendable data extension from various tables including orders, subscribers, and<span> </span>product line items. The resulting data extension will be used as an entry source for a journey.</p>&nbsp;Which tool should help create this table?",
+         "answer":"B",
+         "options":{
+            "A":"Automation Studio",
+            "B":"Data Designer",
+            "C":"Audience Studio"
+         }
+      },
+      "25":{
+         "questionNumber":"Question #:25",
+         "description":"<p>Northern Trail Outfitters imports an encrypted file of its subscribers' favorite colors.</p>&nbsp;Which automation activity and configuration setting should be used for import to a data extension?",
+         "answer":"A",
+         "options":{
+            "A":"Manage Files in File Transfer",
+            "B":"Configure Field-Level Encryption in import file",
+            "C":"Specify character encoding in import file"
+         }
+      },
+      "26":{
+         "questionNumber":"Question #:26",
+         "description":"<p>Northern Trail Outfitters wants to report on subscribers who did not receive emails that were included in the<span> </span>sending audience.</p>&nbsp;Which tool should provide a list of subscribers who didn't receive the expected emails?",
+         "answer":"B",
+         "options":{
+            "A":"_sent Dataview",
+            "B":"'Subscribers Not Sent To* report",
+            "C":"Not Sent Tracking Extract"
+         }
+      },
+      "27":{
+         "questionNumber":"Question #:27",
+         "description":"<p>When building an email audience, a marketer first runs a query to update a data extension referenced in the<span> </span>audience query.</p>&nbsp;Which configuration should be used to ensure the exclusion is updated before the audience query runs?",
+         "answer":"B",
+         "options":{
+            "A":"In the step with the two SQL activities, place a wait step between them",
+            "B":"Place the audience SQL Query Activity in a step after the exclusion SQL Query Activity",
+            "C":"Place the audience SQL Query Activity below the exclusion SQL Query Activity"
+         }
+      },
+      "28":{
+         "questionNumber":"Question #:28",
+         "description":"<p>After sending an initial 'welcome' email, Northern Trail Outfitters needs to configure Journey Builder to<span> </span>continue a customer acquisition journey after a purchase is made on its website.</p>&nbsp;Which type of activity should be used?",
+         "answer":"C",
+         "options":{
+            "A":"Engagement Split",
+            "B":"Behavioral Trigger",
+            "C":"Wait Until Event"
+         }
+      },
+      "29":{
+         "questionNumber":"Question #:29",
+         "description":"<p>The<span> </span>marketing<span> </span>team<span> </span>at<span> </span>Northern<span> </span>Trail<span> </span>Outfitters<span> </span>is<span> </span>concerned<span> </span>about<span> </span>its<span> </span>email<span> </span>deliverability<span> </span>rates<span> </span>over<span> </span>the<span> </span>last<span> </span>three months.</p>&nbsp;Which remediation tactic should be used to improve deliverability?",
+         "answer":"C",
+         "options":{
+            "A":"Increase the frequency of email sending to boost engagement",
+            "B":"Broaden segmentation criteria to reach more diverse audiences",
+            "C":"Scale back sending for specific ISPs until the issue subsides"
+         }
+      },
+      "30":{
+         "questionNumber":"Question #:30",
+         "description":"<p>Northern Trail Outfitters (NTO) is using Datorama Reports for Marketing Cloud to report on email and<span> </span>journey performance.</p>&nbsp;<p>Which preconfigured dashboard should NTO review to get an idea of which journeys are performing the best?</p>",
+         "answer":"C",
+         "options":{
+            "A":"Email and Journey Overview Dashboard",
+            "B":"Email Performance Dashboard",
+            "C":"Journey Performance by Email Dashboard"
+         }
+      },
+      "31":{
+         "questionNumber":"Question #:31",
+         "description":"A marketer has built a journey that they want to run multiple times a day after new data is compiled. The data is NOT in an attribute group in Contact Builder.<p></p><p>What should the marketer do in order to accomplish this?</p>",
+         "answer":"A",
+         "options":{
+            "A":"Select the Recurring schedule type for the entry source in Journey Builder",
+            "B":"Schedule and activate Triggered Sends for the messages in the journey",
+            "C":"Select an automation to populate the Entry Source Data Extension"
+         }
+      },
+      "32":{
+         "questionNumber":"Question #:32",
+         "description":"<p>Northern Trail Outfitters (NTO) stores sales representative information in a data extension. NTO wants to<span> </span>personalize the From Name in emails with the targeted customer's specific representative.</p>&nbsp;Which functionalities accomplish the requested configuration?",
+         "answer":"C",
+         "options":{
+            "A":"Delivery Profile and AMPscript Lookup",
+            "B":"Send Classification and Subscriber Attributes",
+            "C":"Sender Profile and AMPscript Lookup"
+         }
+      },
+      "33":{
+         "questionNumber":"Question #:33",
+         "description":"<p>A marketer is testing an email that includes an Interactive Email Form and discovers the form is missing when<span> </span>the email is opened in Gmail.</p>&nbsp;What guidance should be given to the email developer to ensure the interactive form displays correctly?",
+         "answer":"B",
+         "options":{
+            "A":"Ensure the 'Optimize for Gmail' checkbox is selected",
+            "B":"Ensure characters in the CSS tags are limited to 16kB",
+            "C":"Ensure fallback content has been configured for Gmail"
+         }
+      },
+      "34":{
+         "questionNumber":"Question #:34",
+         "description":"<p>A marketer has noticed an increase in unsubscribes. They would like to address this concern but, going into a<span> </span>holiday season, want to avoid eliminating planned emails.</p>&nbsp;What should they use to easily focus their marketing efforts on subscribers who are least likely to unsubscribe?",
+         "answer":"B",
+         "options":{
+            "A":"Path Optimizer",
+            "B":"Scoring Split",
+            "C":"Frequency Split"
+         }
+      },
+      "35":{
+         "questionNumber":"Question #:35",
+         "description":"Northern Trail Outfitters (NTO) wants to add automation to its email marketing. Which automation should NTO create as a good first step?",
+         "answer":"A",
+         "options":{
+            "A":"An automation that deletes old data extensions, emails, and reports",
+            "B":"An automation that contains several recurring emails and decisioning points",
+            "C":"An automation that Imports subscriber data regularly and updates key data extensions"
+         }
+      },
+      "36":{
+         "questionNumber":"Question #:36",
+         "description":"<p>Northern Trail Outfitters (NTO) is building a welcome journey for new customers with dynamic content in<span> </span>each email. NTO would like to have content personalized for each customer and include assets based on<span> </span>real-time analysis of what is performing the best for other customers.</p>&nbsp;Which feature should NTO use?",
+         "answer":"B",
+         "options":{
+            "A":"Einstein Copy Insights",
+            "B":"Einstein Content Selection",
+            "C":"Enhanced Dynamic Content"
+         }
+      },
+      "37":{
+         "questionNumber":"Question #:37",
+         "description":"A marketer needs to send emails to the creative team for proofing as part of an email campaign. Which feature should help achieve this as an automatic flow?",
+         "answer":"C",
+         "options":{
+            "A":"Subscriber Preview",
+            "B":"Approval Workflow",
+            "C":"Content Builder Approvals"
+         }
+      },
+      "38":{
+         "questionNumber":"Question #:38",
+         "description":"<p>Northern Trail Outfitters (NTO) has subscribers opt-in to its marketing program via email or SMS.</p>&nbsp;What should NTO configure for its welcome series in Journey Builder to honor the opt-in communication method?",
+         "answer":"A",
+         "options":{
+            "A":"Send both email and SMS to ensure subscribers get NTO's messages",
+            "B":"Create one Entry Source for each messaging channel",
+            "C":"Ensure source channel Is available in subscriber data"
+         }
+      },
+      "39":{
+         "questionNumber":"Question #:39",
+         "description":"<p>Northern Trail Outfitters (NTO) sends 500,000 emails per month and shares its sending domain and IP with<span> </span>other customers.</p>&nbsp;Which action ensures NTO's sending reputation remains intact?",
+         "answer":"A",
+         "options":{
+            "A":"Implement an SAP with Private Domain and a Dedicated IP",
+            "B":"Request three Dedicated IPs to spread out the sending volume",
+            "C":"Request a Private Domain to leverage SPF and DKIM authentication"
+         }
+      },
+      "40":{
+         "questionNumber":"Question #:40",
+         "description":"<p>A marketing team uses email templates as a means to create a consistent style guide. The team has recently<span> </span>updated the primary template to coincide with company-wide rebranding; however, content approvers are<span> </span>reporting they are not seeing the new changes reflected.</p>&nbsp;Which step needs to be completed?",
+         "answer":"B",
+         "options":{
+            "A":"The email must be recreated using the updated template",
+            "B":"'Update Email Now' needs to be applied to each email",
+            "C":"The template must be approved before updates are reflected"
+         }
+      },
+      "41":{
+         "questionNumber":"Question #:41",
+         "description":"<p>Northern Trail Outfitters (NTO) has noticed a decrease in open rate across all email campaigns. NTO is<span> </span>concerned its sender reputation may have been negatively impacted by a recent import of subscribers.</p>&nbsp;Which metric should be analyzed as a possible indicator of bad sender reputation?",
+         "answer":"C",
+         "options":{
+            "A":"Send volume",
+            "B":"Click rate",
+            "C":"Block bounces"
+         }
+      },
+      "42":{
+         "questionNumber":"Question #:42",
+         "description":"<p>Northern Trail Outfitters needs to send a transactional email to all customers who purchased an item that was<span> </span>recently recalled. The email must be sent to each applicable customer even if they have unsubscribed.</p>&nbsp;Which component should be configured to provide this functionality?",
+         "answer":"B",
+         "options":{
+            "A":"Delivery Profile",
+            "B":"Send Classification",
+            "C":"Sender Profile"
+         }
+      },
+      "43":{
+         "questionNumber":"Question #:43",
+         "description":"Northern Trail Outfitters wants to ensure that the Email Address field value is not duplicated in a data extension. What should a marketer do to ensure the Email Address field values are unique?",
+         "answer":"A",
+         "options":{
+            "A":"Mark the field as the Primary Key",
+            "B":"Mark the data extension as Sendable",
+            "C":"Use Email Address as Subscriber Key"
+         }
+      },
+      "44":{
+         "questionNumber":"Question #:44",
+         "description":"<p>Northern Trail Outfitters (NTO) is having an issue with bad email addresses coming into its website email<span> </span>signup form, impacting deliverability and sender reputation.</p>&nbsp;What should NTO use to make sure email addresses are valid before adding to its audience?",
+         "answer":"B",
+         "options":{
+            "A":"Leverage a Smart Capture block",
+            "B":"A double opt-in at signup",
+            "C":"Add CAPTCHA validation to the form"
+         }
+      },
+      "45":{
+         "questionNumber":"Question #:45",
+         "description":"<p>A marketer typically sends to a filtered data extension that contains their primary audience. They need to target only a portion of this population for an upcoming send.</p><p></p><p>What should they do to further segment their audience?</p>",
+         "answer":"C",
+         "options":{
+            "A":"Copy the filtered data extension and add additional filter criteria",
+            "B":"Use the Split option to temporarily add additional filter criteria",
+            "C":"Copy the data filter and build a new data extension with additional filter criteria"
+         }
+      },
+      "46":{
+         "questionNumber":"Question #:46",
+         "description":"<p>A marketing manager wants to see how the cross-channel customer population has changed over the last 6<span> </span>months.</p>&nbsp;Which report should be run to provide this Information?",
+         "answer":"C",
+         "options":{
+            "A":"Contacts Count",
+            "B":"Contacts Analytics",
+            "C":"Audience Engagement Over Time"
+         }
+      },
+      "47":{
+         "questionNumber":"Question #:47",
+         "description":"<p>The customer success team at Northern Trail Outfitters wants to build out a profile for its subscribers to<span> </span>improve segmentation for future sends.</p>&nbsp;Which content block should the team use to capture this information directly from the inbox for some subscribers?",
+         "answer":"B",
+         "options":{
+            "A":"Smart capture block",
+            "B":"Interactive Email Form block",
+            "C":"Einstein content block"
+         }
+      },
+      "48":{
+         "questionNumber":"Question #:48",
+         "description":"<p>A marketer wants to use a filter to create a data extension that includes only records from yesterday.</p>Which step should they take to ensure the data extension includes newly added records?",
+         "answer":"C",
+         "options":{
+            "A":"Check the 'AUTOMATICALLY REFRESH UPON SENDING' checkbox",
+            "B":"Configure the filter DE to auto-refresh dally in properties",
+            "C":"Schedule an automation to refresh the filter activity each day"
+         }
+      },
+      "49":{
+         "questionNumber":"Question #:49",
+         "description":"<p>The marketing team has been troubleshooting why an email was not sent to 10% of the audience within the<span> </span>data extension. When they review the tracking for the job ID, they see 0 subscribers were held or<span> </span>unsubscribed.</p>&nbsp;Which additional issues should they consider?",
+         "answer":"A",
+         "options":{
+            "A":"DoNotTrack preferences",
+            "B":"Bounced contacts from previous sends",
+            "C":"Suppressed contacts from contact deletion"
+         }
+      },
+      "50":{
+         "questionNumber":"Question #:50",
+         "description":"<p>A marketing team wants to schedule automatic delivery of pivot table data to an Amazon Web Services<span> </span>(AWS) S3 bucket every Monday at 6:00 a.m.</p>&nbsp;Which method meets their needs?",
+         "answer":"B",
+         "options":{
+            "A":"Report Scheduling In Datorama Reports",
+            "B":"File Transfer Activity in Automation Studio",
+            "C":"Report Definition Activity In Automation Studio"
+         }
+      },
+      "51":{
+         "questionNumber":"Question #:51",
+         "description":"<p>The marketer for Northern Trail Outfitters wants to review the tone of subject lines and the effect on<span> </span>engagement for recent sends.</p>&nbsp;Which tool should supply insights into the tone of subject lines?",
+         "answer":"C",
+         "options":{
+            "A":"Einstein Recommendations",
+            "B":"Einstein Messaging Insights",
+            "C":"Einstein Copy Insights"
+         }
+      },
+      "52":{
+         "questionNumber":"Question #:52",
+         "description":"<p>A marketer wants to quickly view the link performance for a specific email, including Total Clicks and Unique<span> </span>Clicks.</p>&nbsp;Which area of the application should provide this data?",
+         "answer":"B",
+         "options":{
+            "A":"Send Performance Tab",
+            "B":"Email Overlay View",
+            "C":"Tracking Conversions Tab"
+         }
+      },
+      "53":{
+         "questionNumber":"Question #:53",
+         "description":"<p>Northern Trail Outfitters (NTO) has multiple lines of businesses sharing one business unit. NTO wants to<span> </span>ensure its customers can identify their specific line of business when receiving an email.</p>&nbsp;Which setting should be configured in a send to identify the line of business sending the message?",
+         "answer":"B",
+         "options":{
+            "A":"Sender Authentication Package",
+            "B":"Brand Builder",
+            "C":"Sender Profile"
+         }
+      },
+      "54":{
+         "questionNumber":"Question #:54",
+         "description":"<p>Northern Trail Outfitters wants to organize its assets so images can be easily searched by tags in Content<span> </span>Builder. However, most images have multiple tags that could be applied, which makes it more difficult to filter<span> </span>to a manageable number of results.</p>&nbsp;How should the number of tags selected for an asset be minimized while still providing the necessary granularity?",
+         "answer":"B",
+         "options":{
+            "A":"Make the Customer Key more descriptive",
+            "B":"Leverage Einstein for content tagging",
+            "C":"Use nested tags to create hierarchies"
+         }
+      },
+      "55":{
+         "questionNumber":"Question #:55",
+         "description":"<p>A marketer with Northern Trail Outfitters needs to review how different variations of an email will render in<span> </span>different email clients.</p>&nbsp;Which tool should the marketer use?",
+         "answer":"B",
+         "options":{
+            "A":"Content Detective",
+            "B":"Test Send",
+            "C":"Send Preview"
+         }
+      },
+      "56":{
+         "questionNumber":"Question #:56",
+         "description":"A marketer wants to better organize their assets in Marketing Cloud. What should they do to improve searching and filtering in Content Builder?",
+         "answer":"A",
+         "options":{
+            "A":"Add assets to folders upon creation",
+            "B":"Add descriptive tags to each asset upon creation",
+            "C":"Add a description to each asset upon creation"
+         }
+      },
+      "57":{
+         "questionNumber":"Question #:57",
+         "description":"<p>Northern Trail Outfitters (NTO) is troubleshooting why a triggered send isn't being delivered to the customer.<span> </span>When querying the _subscribers data view, NTO notices this subscriber key exists twice, and one of them has<span> </span>a status of 'Held'.</p>&nbsp;What is the source of the duplicate subscriber key?",
+         "answer":"A",
+         "options":{
+            "A":"Triggered Send Managed Lists",
+            "B":"Global Unsubscribe List",
+            "C":"Auto Suppression List"
+         }
+      },
+      "58":{
+         "questionNumber":"Question #:58",
+         "description":"<p>Northern Trail Outfitters (NTO) wants to include specific content for its most engaged customers and different<span> </span>content for its least engaged customers.</p>&nbsp;Which Journey Builder activity should NTO use?",
+         "answer":"C",
+         "options":{
+            "A":"Engagement Split",
+            "B":"Frequency Split",
+            "C":"Scoring Split"
+         }
+      },
+      "59":{
+         "questionNumber":"Question #:59",
+         "description":"<p>A marketer wants to store all the attributes for a triggered send within a data extension.</p>Which configuration is required when creating the data extension?",
+         "answer":"B",
+         "options":{
+            "A":"Select the 'Use for triggeredsend' checkbox",
+            "B":"Include Subscriberkey and Emailaddress field as primary key",
+            "C":"Create from template and choose triggeredsend template"
+         }
+      },
+      "60":{
+         "questionNumber":"Question #:60",
+         "description":"<p>A marketer for Northern Trail Outfitters needs to see test emails for each subscriber in a data extension.</p>What should the marketer do to ensure the data extension appears as a Recipient Test Data Extension in the Test Send menu?",
+         "answer":"B",
+         "options":{
+            "A":"Save the data extension in the Test Folder",
+            "B":"Create the data extension as 'Is Testable'",
+            "C":"Associate the data extension to the Campaign"
+         }
+      },
+      "61":{
+         "questionNumber":"Question #:61",
+         "description":"<p>Northern Trail Outfitters (NTO) receives a complaint from a long-time customer who claims that, despite<span> </span>providing an updated email address, they are still receiving emails at an old address. NTO confirms that the<span> </span>customer's new email address is stored in the target data extension.</p>&nbsp;What is preventing the customer from receiving emails at their new address?",
+         "answer":"B",
+         "options":{
+            "A":"The new email address is from an unsupported domain",
+            "B":"The email address has not been updated in All Subscribers",
+            "C":"The customer has not opted In again with the new address"
+         }
+      },
+      "62":{
+         "questionNumber":"Question #:62",
+         "description":"<p>An insurance company has launched a new campaign to target Individuals between 64 and 65 that are not yet<span> </span>enrolled and are opted into email. All subscriber data is stored in one data extension.</p>&nbsp;How should the marketer use low-code to create this segment?",
+         "answer":"A",
+         "options":{
+            "A":"Create a data filter on the data extension",
+            "B":"Filter the .csv file before import",
+            "C":"Write a query to create a filtered data extension"
+         }
+      },
+      "63":{
+         "questionNumber":"Question #:63",
+         "description":"Northern Trail Outfitters (NTO) wants to test Einstein Recommendations against the company's static product recommendations in a product return confirmation email. Next, NTO needs to evaluate the results and choose the winning option for future confirmations.<p></p>Which journey type is best suited to run this test?",
+         "answer":"B",
+         "options":{
+            "A":"Single Send",
+            "B":"Multi-Step",
+            "C":"Transactional Send"
+         }
+      },
+      "64":{
+         "questionNumber":"Question #:64",
+         "description":"<p>A healthcare company imports its patient portal registrations at the parent level business unit (BU). The<span> </span>marketing team would like to ensure individual office locations have access to this data without giving access<span> </span>to the parent level BU.</p>&nbsp;What should the marketing team do in Automation Studio to ensure data is available at the child BU level?",
+         "answer":"C",
+         "options":{
+            "A":"After the file import, use the transfer file activity to move data into data extensions in child BUS",
+            "B":"Create automations that import the data directly into the child BUs to bypass the parent level BU",
+            "C":"After the file import, use the filter activity to populate shared data extensions that are available to child BUs"
+         }
+      },
+      "65":{
+         "questionNumber":"Question #:65",
+         "description":"<p>Northern Trail Outfitters (NTO) wants to leverage Path Optimizer to test new marketing content. The best path<span> </span>will be selected based on the orders placed on NTO's website.</p>&nbsp;What should NTO configure in Path Optimizer?",
+         "answer":"A",
+         "options":{
+            "A":"Email Engagement",
+            "B":"Manual Engagement",
+            "C":"Web Conversion"
+         }
+      }
+   }
 
 export const hugoQuestions = {
 // export const questions = {
