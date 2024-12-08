@@ -228,7 +228,7 @@ function PrettyHome({ window }) {
           >
             <MenuIcon />
           </IconButton>
-          <HeaderTitle title="B2C Certification Questions" />
+          <HeaderTitle title="Blue Quiz: AI Associate Certification" />
         </Toolbar>
       </AppBar>
       <nav className={classes.drawer} aria-label="mailbox folders">
