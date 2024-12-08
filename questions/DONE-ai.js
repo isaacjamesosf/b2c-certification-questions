@@ -1,4 +1,16 @@
 export const questions = {
+    "1": {
+        "questionNumber": "Question #:1",
+        "description": "Which data does Salesforce automatically exclude from marketing Cloud Einstein engagement model training to mitigate bias and ethic…",
+        "options": {
+            "A": "Geographic",
+            "B": "Cryptographic",
+            "C": "Demographic"
+        },
+        "answer": [
+            "C"
+        ]
+    },
     "2": {
         "questionNumber": "Question #:2",
         "description": "In Salesforce’s AI ethics, what does the principle ‘Responsible’ emphasize?",
@@ -1351,16 +1363,4 @@ export const questions = {
             "B"
         ]
     },
-    "113": {
-        "questionNumber": "Question #:113",
-        "description": "Which data does Salesforce automatically exclude from marketing Cloud Einstein engagement model training to mitigate bias and ethic…",
-        "options": {
-            "A": "Geographic",
-            "B": "Cryptographic",
-            "C": "Demographic"
-        },
-        "answer": [
-            "C"
-        ]
-    }
 }
