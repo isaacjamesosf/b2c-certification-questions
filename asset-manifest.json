@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/quiz-b2c-certification/static/css/main.e6c13ad2.css",
-    "main.js": "/quiz-b2c-certification/static/js/main.20fe7f21.js",
+    "main.js": "/quiz-b2c-certification/static/js/main.7ced6f6e.js",
     "static/media/109.png": "/quiz-b2c-certification/static/media/109.432b1312826ee5e20397.png",
     "static/media/62.png": "/quiz-b2c-certification/static/media/62.7b47a6dacce0c59c88a3.png",
     "static/media/90.png": "/quiz-b2c-certification/static/media/90.5677f41025ca008b5c97.png",
@@ -14,10 +14,10 @@
     "static/media/7.jpg": "/quiz-b2c-certification/static/media/7.22077ed1de0953a644f9.jpg",
     "index.html": "/quiz-b2c-certification/index.html",
     "main.e6c13ad2.css.map": "/quiz-b2c-certification/static/css/main.e6c13ad2.css.map",
-    "main.20fe7f21.js.map": "/quiz-b2c-certification/static/js/main.20fe7f21.js.map"
+    "main.7ced6f6e.js.map": "/quiz-b2c-certification/static/js/main.7ced6f6e.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.20fe7f21.js"
+    "static/js/main.7ced6f6e.js"
   ]
 }
