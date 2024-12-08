@@ -1,4 +1,4 @@
-import { questions } from "../assets/questions";
+import { questions } from "../assets/questionsAI";
 
 export const getQuestions = ({
   questionsQty,

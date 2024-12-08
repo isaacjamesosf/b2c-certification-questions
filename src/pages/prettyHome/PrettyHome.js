@@ -14,7 +14,7 @@ import HistoryIcon from "@material-ui/icons/History";
 import Toolbar from "@material-ui/core/Toolbar";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Button, Link } from "@material-ui/core";
-import { questions } from "../../assets/questions";
+import { questions } from "../../assets/questionsAI";
 import Question from "../../components/Question";
 import DropdownNumber from "../../components/DropdownNumber";
 import { getHomeStyle } from "../../utils/styles/homeStyle";
